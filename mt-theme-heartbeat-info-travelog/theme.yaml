@@ -1,0 +1,324 @@
+--- 
+author_link: http://www.drivemenuts.com/
+author_name: webmaster
+class: blog
+description: 旅行記用のブログのテーマです。WebSite用のテーマとセットでご利用ください。旅行記ではないブログにはテーマ「Heartbeat.info ノーマルブログ」をお使いください。
+elements: 
+  custom_fields: 
+    component: commercial
+    data: 
+      categorymainimg: 
+        default: ''
+        description: カテゴリーのメインイメージ。トップページなどで利用する。
+        name: カテゴリーのメインイメージ
+        obj_type: category
+        options: ~
+        required: 0
+        tag: CategoryDataCategorymainimg
+        type: image
+      categorymovie: 
+        default: ''
+        description: カテゴリー記事一覧ページに表示させる動画を設定します。右サイドバーに表示させる場合は、横幅は390ピクセル以下にしてください。
+        name: 旅行の動画（カテゴリー別）
+        obj_type: category
+        options: ~
+        required: 0
+        tag: CategoryDataCategorymovie
+        type: textarea
+      categorysubtitle: 
+        default: ''
+        description: カテゴリーのサブタイトルを設定してください
+        name: カテゴリーサブタイトル
+        obj_type: category
+        options: ~
+        required: 0
+        tag: CategoryDataCategorysubtitle
+        type: text
+      entrymainimg: 
+        default: ''
+        description: 記事毎のメイン画像を指定します。記事一覧のサムネール画像として使われます。
+        name: 記事のメイン画像
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEntrymainimg
+        type: image
+      entrymovie: 
+        default: ''
+        description: ブログ記事ページに表示させる動画を設定します。右サイドバーに表示させる場合は、横幅は390ピクセル以下にしてください。&iv_load_policy=3を付けるとアノテーションを非表示
+        name: 旅行の動画（ブログ記事別）
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataEntrymovie
+        type: textarea
+      googlemaps: 
+        default: ''
+        description: Google MapsとStreet Viewを表示させるための北緯東経。埋め込み用のソースからはcbllの北緯東経を使う
+        name: Googleマップ＆ストリートビュー用北緯東経
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataGooglemaps
+        type: text
+      linkurl: 
+        default: ''
+        description: 「URL,リンク先タイトル」で登録する（カンマ区切り）。リンク先タイトルに「,」が混ざらない様に注してください。
+        name: 関連サイトリンク集
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataLinkurl
+        type: textarea
+      streetviewangle: 
+        default: 0
+        description: ストリートビューの方角を設定する角度を入れる。埋め込み用ソースのcbpの2番目の数値を使う
+        name: ストリートビュー用方角
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataStreetviewangle
+        type: text
+    importer: custom_fields
+  template_set: 
+    component: ~
+    data: 
+      base_path: templates
+      label: exported_template set
+      templates: 
+        archive: 
+          template_81: 
+            label: ブログ記事一覧（カテゴリー）
+            mappings: 
+              category: 
+                archive_type: Category
+                file_template: category/category<MTCategoryID>.html
+                preferred: 1
+        index: 
+          atom: 
+            label: Atom
+            outfile: atom.xml
+            rebuild_me: 1
+          javascript: 
+            label: JavaScript
+            outfile: mt.js
+            rebuild_me: 1
+          main_index: 
+            label: メインページ
+            outfile: index.html
+            rebuild_me: 1
+          rsd: 
+            label: RSD
+            outfile: rsd.xml
+            rebuild_me: 1
+          rss: 
+            label: RSS
+            outfile: rss.xml
+            rebuild_me: 1
+          styles: 
+            label: スタイルシート(メイン)
+            outfile: styles-site.css
+            rebuild_me: 1
+          template_1202: 
+            label: サイトマップ XMLファイル
+            outfile: sitemap.xml
+            rebuild_me: 1
+          template_1203: 
+            label: ブログスタイルシート
+            outfile: blog_style.css
+            rebuild_me: 1
+          template_437: 
+            label: オリジナルjQueryファイル
+            outfile: original_jquery.js
+            rebuild_me: 1
+        individual: 
+          entry: 
+            label: ブログ記事
+            mappings: 
+              individual: 
+                archive_type: Individual
+                file_template: entry/entry<mt:EntryID>.html
+                preferred: 1
+        module: 
+          categories: 
+            label: カテゴリ
+          comment_detail: 
+            label: コメント詳細
+          comment_form: 
+            label: コメント入力フォーム
+          comments: 
+            label: コメント
+          entry_detail: 
+            label: ブログ記事の詳細
+          entry_metadata: 
+            label: ブログ記事のメタデータ
+          entry_summary: 
+            label: ブログ記事の概要
+          footer: 
+            label: フッターコンテナ
+          header: 
+            label: ヘッダー
+          page_detail: 
+            label: ウェブページの詳細
+          tags: 
+            label: タグ
+          template_1210: 
+            label: Open Graph Protocol
+          template_390: 
+            label: サイトのトップに戻る
+          template_879: 
+            label: HTMLヘッダー
+          trackbacks: 
+            label: トラックバック
+        page: 
+          page: 
+            label: ウェブページ
+            mappings: 
+              page: 
+                archive_type: Page
+                file_template: "%-c/%-f"
+                preferred: 1
+        system: 
+          comment_listing: 
+            label: コメント一覧
+          comment_preview: 
+            label: コメントプレビュー
+          comment_response: 
+            label: コメント完了
+          dynamic_error: 
+            label: ダイナミックパブリッシングエラー
+          popup_image: 
+            label: ポップアップ画像
+          search_results: 
+            label: 検索結果
+        widget: 
+          template_3039: 
+            label: 旅行の動画（カテゴリー別）
+          template_3269: 
+            label: フリースペースブログ01
+          template_3270: 
+            label: 関連サイトリンク集
+          template_3271: 
+            label: 広告（右サイドバー用）01
+          template_3272: 
+            label: 写真ギャラリー
+          template_3273: 
+            label: 広告（メインコンテンツ用）01
+          template_3275: 
+            label: フリースペースウェブサイト03
+          template_3278: 
+            label: 旅行の動画（すべて）
+          template_3279: 
+            label: フリースペースウェブサイト01
+          template_3280: 
+            label: フリースペースウェブサイト02
+          template_3281: 
+            label: フリースペースブログ02
+          template_3282: 
+            label: フリースペースブログ03
+          template_3284: 
+            label: ブログ内検索
+          template_3285: 
+            label: 広告（右サイドバー用）02
+          template_3286: 
+            label: 広告（メインコンテンツ用）02
+          template_3287: 
+            label: 旅行の動画（ブログ記事別）
+          template_3288: 
+            label: ナビゲーション（前・カテゴリー・後）
+          template_3289: 
+            label: Facebook
+          template_3290: 
+            label: Twitter
+          template_3291: 
+            label: Zenback
+          template_3294: 
+            label: カテゴリー一覧
+          template_3303: 
+            label: タグクラウド
+          template_3309: 
+            label: ブログ内の全記事一覧
+          template_4102: 
+            label: ウェブページ一覧
+          template_4695: 
+            label: ↑このページのトップへ
+          template_4969: 
+            label: ナビゲーション（前後カテゴリー）
+        widgetset: 
+          template_3274: 
+            label: ブログのトップページ01
+            order: 1000
+            widgets: 
+              - 広告（メインコンテンツ用）01
+              - 広告（メインコンテンツ用）02
+              - タグクラウド
+              - ブログ内の全記事一覧
+          template_3277: 
+            label: ブログ記事一覧の右サイドバー
+            order: 1000
+            widgets: 
+              - ブログ内検索
+              - カテゴリー一覧
+              - 広告（右サイドバー用）01
+              - 旅行の動画（カテゴリー別）
+              - Facebook
+              - Twitter
+              - 広告（右サイドバー用）02
+          template_3283: 
+            label: ブログ記事の右サイドバー
+            order: 1000
+            widgets: 
+              - ブログ内検索
+              - 写真ギャラリー
+              - 広告（右サイドバー用）01
+              - 旅行の動画（ブログ記事別）
+              - 関連サイトリンク集
+              - カテゴリー一覧
+              - Facebook
+              - Twitter
+              - 広告（右サイドバー用）02
+              - ナビゲーション（前・カテゴリー・後）
+          template_3292: 
+            label: ブログ記事のメイン部分01
+            order: 1000
+            widgets: 
+              - 広告（メインコンテンツ用）01
+          template_3293: 
+            label: ブログ記事のメイン部分02
+            order: 1000
+            widgets: 
+              - ナビゲーション（前・カテゴリー・後）
+              - Zenback
+          template_3295: 
+            label: ブログ記事一覧のメイン部分01
+            order: 1000
+            widgets: []
+
+          template_3297: 
+            label: ブログのトップページ02
+            order: 1000
+            widgets: 
+              - 広告（メインコンテンツ用）01
+          template_3302: 
+            label: 検索結果・タグクラウド検索結果ページの右サイドバー
+            order: 1000
+            widgets: 
+              - ブログ内検索
+              - タグクラウド
+              - 広告（右サイドバー用）01
+              - 広告（右サイドバー用）02
+          template_4696: 
+            label: ブログ記事一覧のメイン部分02
+            order: 1000
+            widgets: []
+
+          template_4764: 
+            label: ブログ記事のメイン部分03
+            order: 1000
+            widgets: []
+
+    importer: template_set
+id: mt-theme-heartbeat-info-travelog
+label: Heartbeat.info 旅行記ブログ
+name: Heartbeat.info 旅行記ブログ
+version: 1.0

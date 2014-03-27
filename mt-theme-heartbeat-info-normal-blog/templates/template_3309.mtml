@@ -1,0 +1,15 @@
+<div class="allentrylist widget">
+<h3><$mt:BlogName$>の全記事一覧</h3>
+<mt:BlogEntryCount setvar="blogentrycount">
+<mt:Entries lastn="$blogentrycount">
+<mt:EntriesHeader>
+<div class="allentry">
+<ul class="checkimg">
+</mt:EntriesHeader>
+<li><a href="<mt:EntryPermalink>" title="<$mt:EntryTitle$>"><$mt:EntryTitle$> <span class="date">[<mt:EntryDate format="%Y/%m/%d %H:%M">]</span></a></li>
+<mt:EntriesFooter>
+</ul>
+</div>
+</mt:EntriesFooter>
+</mt:Entries>
+</div>

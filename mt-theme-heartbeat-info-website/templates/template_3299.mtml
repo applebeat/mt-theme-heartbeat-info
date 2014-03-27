@@ -1,0 +1,31 @@
+<mt:Blogs include_blogs="children" mode="context" ignore_archive_context="1">
+<mt:SetVarBlock name="travelblog"><mt:If tag="BlogDataTravelblog"><mt:BlogDataTravelblog></mt:If></mt:SetVarBlock>
+
+<mt:If name="travelblog" eq="旅行記である">
+<mt:Entries limit="1" sort_order="ascend"><mt:EntryDate format="%Y%m%d" setvar="entrydate"></mt:Entries>
+<mt:Assets tag="@blogmainimg" lastn="1"><mt:AssetThumbnailURL square="1" width="280" setvar="blogmainimg"></mt:Assets>
+<mt:SetVarBlock name="blog_list" key="$entrydate">
+<li style="background-image:url(<mt:GetVar name="blogmainimg">);"><a href="<$mt:BlogURL$>" title="<$mt:BlogName$>">
+<div class="travel-caption">
+<span class="blogname"><mt:BlogName></span>
+<span class="travelperiod subtitle"><mt:Entries limit="1" sort_order="ascend"><mt:EntryDate format="%Y/%m/%d"></mt:Entries>〜<mt:Entries lastn="1" sort_order="descent"><mt:EntryDate format="%Y/%m/%d"></mt:Entries></span>
+</div>
+</a></li>
+</mt:SetVarBlock>
+</mt:If>
+</mt:Blogs>
+
+<mt:Loop name="blog_list" sort_by="key numeric reverse">
+<mt:If name="__first__">
+  <div class="travels widget">
+  <h3>Travels│旅行記</h3>
+  <div class="travellist">
+  <ul>
+</mt:If>
+<$mt:GetVar name="__value__"$>
+<mt:If name="__last__">
+  </ul>
+  </div>
+  </div>
+</mt:If>
+</mt:Loop>

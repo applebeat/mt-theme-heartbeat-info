@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mt:WebSiteID setvar="thiswebsiteid">
+<mt:BlogID setvar="thisblogid">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc><mt:WebSiteURL></loc>
+
+      <lastmod><mt:LastRebuildDate blog_id='$thiswebsiteid' format="%Y-%m-%dT%H:%M:%S+09:00"></lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc><mt:BlogURL></loc>
+
+      <lastmod><mt:LastRebuildDate blog_id='$thisblogid' format="%Y-%m-%dT%H:%M:%S+09:00"></lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+
+<mt:IfArchiveTypeEnabled archive_type="Category"><mt:ArchiveList archive_type="Category">
+   <url>
+
+      <loc><mt:ArchiveLink></loc>
+
+      <lastmod><mt:LastRebuildDate blog_id='$thisblogid' format="%Y-%m-%dT%H:%M:%S+09:00"></lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+</mt:ArchiveList></mt:IfArchiveTypeEnabled>
+<mt:IfArchiveTypeEnabled archive_type="Individual"><mt:ArchiveList archive_type="Individual">
+   <url>
+
+      <loc><mt:ArchiveLink></loc>
+
+      <lastmod><mt:EntryModifiedDate format="%Y-%m-%dT%H:%M:%S+09:00"></lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+</mt:ArchiveList>
+</mt:IfArchiveTypeEnabled>
+
+</urlset> 

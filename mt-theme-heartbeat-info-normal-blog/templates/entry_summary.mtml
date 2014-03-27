@@ -1,0 +1,26 @@
+<div id="entry-<$MTEntryID$>" class="entry-asset asset">
+    <div class="asset-header">
+        <h2 class="asset-name"><a href="<$MTEntryPermalink$>"><$MTEntryTitle$></a></h2>
+        <div class="permalink"><a href="<$MTEntryPermalink$>"><$MTEntryPermalink$></a></div>
+    </div>
+    <div class="asset-content">
+<MTIfNonEmpty tag="EntryBody">
+        <div class="asset-body">
+            <$MTEntryBody words="100" remove_html="1"$>...
+        </div>
+</MTIfNonEmpty>
+<MTIgnore>
+<MTIfTagSearch>
+        <$MTInclude module="タグ"$>
+</MTIfTagSearch>
+</MTIgnore>
+<MTIgnore>
+<MTIfNonEmpty tag="EntryMore" convert_breaks="0">
+        <div class="asset-more-link">
+            <a href="<$MTEntryPermalink$>#more"><$MTEntryTitle$></a>の続きを読む
+        </div>
+</MTIfNonEmpty>
+</MTIgnore>
+    </div>
+    <div class="asset-footer"><$MTInclude module="ブログ記事のメタデータ"$></div>
+</div>

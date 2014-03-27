@@ -1,0 +1,14 @@
+<div class="asset-meta">
+    <span class="byline">
+<mt:If tag="EntryAuthorDisplayName">
+        <span class="vcard author"><$mt:EntryAuthorLink show_hcard="1"$></span> <abbr class="published" title="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x %X"$></abbr>
+<mt:Else>
+        <abbr class="published" title="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x %X"$></abbr>
+</mt:If>
+    </span>
+<MTIgnore>
+    <span class="separator">|</span> <a class="permalink" href="<$MTEntryPermalink$>">個別ページ</a>
+    <MTIfCommentsActive>| <a href="<$MTEntryPermalink$>#comments">コメント(<$MTEntryCommentCount$>)</a></MTIfCommentsActive>
+    <MTIfPingsActive>| <a href="<$MTEntryPermalink$>#trackback">トラックバック(<$MTEntryTrackbackCount$>)</a></MTIfPingsActive>
+</MTIgnore>
+</div>

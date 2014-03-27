@@ -1,0 +1,74 @@
+<$MTInclude module="ヘッダー"$>
+
+<body id="category" name="catid<$MTCategoryID$>" class="blog<mt:BlogID>">
+<div id="container">
+
+<MTInclude module="HTMLヘッダー">
+
+<div id="content">
+
+<$mt:Include widget="ナビゲーション（前後カテゴリー）"$>
+
+<div id="content-title">
+<h2><$MTArchiveTitle$></h2>
+<mt:If tag="CategoryDataCategorysubtitle"><h3><mt:CategoryDataCategorysubtitle></h3></mt:If>
+<div id="description"><$MTCategoryDescription$></div>
+</div><!-- /content-title -->
+
+<div id="category-content">
+
+<div id="main-content" class="main-content">
+<div class="action">
+
+<MTEntries sort_order="ascend">
+<dl>
+<dt>
+<a href="<$MTEntryPermalink$>" title="<$MTEntryTitle$>"><span class="date"><$MTEntryDate format="%Y/%m/%d %p%l:%M"$></span><br /><$MTEntryTitle$></a>
+</dt>
+
+<dd>
+<a href="<$MTEntryPermalink$>" title="<$MTEntryTitle$>">
+<div class="thumb">
+<img src="<mt:If tag="EntryDataEntrymainimg"><mt:EntryDataEntrymainimgAsset><MTAssetThumbnailURL width="180"></mt:EntryDataEntrymainimgAsset><MTElseIf><MTEntryAssets lastn="1"><mt:AssetThumbnailURL width="180"></MTEntryAssets><MTElse><mt:CategoryDataCategorymainimgAsset><mt:AssetThumbnailURL width="180"></mt:CategoryDataCategorymainimgAsset></MTIf>" alt="<$MTEntryTitle$>" width="180" />
+</div><!-- /thumb -->
+
+<div class="right-of-img">
+<div class="entrydescription">
+<$MTEntryBody words="80"$>...&nbsp;
+<span class="readmore">続きを読む&raquo;</span>
+</div>
+</div><!-- /right-of-img -->
+</a>
+</dd>
+</dl>
+</MTEntries>
+
+</div><!-- /action -->
+
+<$mt:Widgetset name="ブログ記事一覧のメイン部分01"$>
+
+</div><!-- /main-content -->
+
+<div id="sub-content" class="sub-content">
+
+<$mt:WidgetSet name="ブログ記事一覧の右サイドバー"$>
+
+</div><!-- /sub-content -->
+
+<$mt:Widgetset name="ブログ記事一覧のメイン部分02"$>
+<$mt:Include widget="ナビゲーション（前後カテゴリー）"$>
+
+</div><!-- /category-content -->
+
+<div class="to-top">
+<a href="#container">↑このページのトップへ</a>
+</div><!-- /to-top -->
+
+</div><!-- /content -->
+
+<$mt:Include module="フッターコンテナ"$>
+
+</div><!-- /container -->
+
+</body>
+</html>

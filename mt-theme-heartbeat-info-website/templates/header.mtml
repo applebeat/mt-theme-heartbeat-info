@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=<$mt:PublishCharset$>" />
+    <mt:Include module="Viewportの設定">
+    <link rel="stylesheet" href="<$mt:WebSiteURL$>css/original_style_sheet.css" type="text/css" />
+    <link rel="stylesheet" href="<$mt:WebSiteURL$>css/css_for_tablet.css" type="text/css" />
+    <link rel="start" href="<$mt:WebsiteURL$>" title="ホーム" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
+    <script type="text/javascript" src="<$mt:Link template="javascript"$>"></script>
+<title><$mt:WebsiteName$></title>
+<mt:If name="main_index">
+<mt:Include module="Open Graph Protocol for WebSite">
+</mt:If>
+<mt:If tag="WebsiteDataGoogleanalytics">
+<mt:WebsiteDataGoogleanalytics convert_breaks="0">
+</mt:If>
+</head>

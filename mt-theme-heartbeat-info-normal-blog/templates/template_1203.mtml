@@ -1,0 +1,31 @@
+@charset "utf-8";
+<mt:Ignore>
+/* ■■■全体のスタイル■■■ */
+/* ■■■右サイドバーのスタイル■■■ */
+/* ■■■トップページのスタイル■■■ */
+/* ■■■カテゴリーアーカイブのスタイル■■■ */
+/* ■■■エントリーアーカイブのスタイル■■■ */
+/* ■■■検索結果ページのスタイル■■■ */
+/* ■■■コメントプレビューのスタイル■■■ */
+/* ■■■タブレット用CSSここから■■■ */
+</mt:Ignore>
+
+/* ■■■全体のスタイル■■■ */
+#header{
+color: #ffffff;
+background: #000000 url(<mt:If tag="BlogDataHeaderimage"><mt:BlogDataHeaderimage><mt:Else><mt:WebSiteURL>images/header_background_sample.jpg</mt:If>) center center no-repeat;
+background-size:cover;
+height:250px;
+}
+
+#home #content .search{
+border-width:0;
+}
+
+#content {
+padding: 20px 10px;
+}
+
+#entry #main-content{
+padding-left:0;
+}
