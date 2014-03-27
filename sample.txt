@@ -1,3 +1,0 @@
-sample
-MovableType Theme of heartbeat.info
-mt-theme-heartbeat-info
