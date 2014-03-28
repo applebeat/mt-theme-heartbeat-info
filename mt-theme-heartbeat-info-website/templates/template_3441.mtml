@@ -71,15 +71,33 @@ float:none;
 display:block;
 }
 
-#entry .navi ul.linklist li{
+div.navi ul.linklist li{
 display:block;
 }
 
-#entry .navi ul.linklist li:first-child::before{
+div.navi ul.linklist li.nextcat ,div.navi ul.linklist li.pre{
+border:1px solid #dddddd;
+border-width:0 0 1px;
+}
+
+div.navi ul.linklist li.precat ,div.navi ul.linklist li.next{
+border:1px solid #dddddd;
+border-width:1px 0 0;
+}
+
+div.navi ul.linklist li.home a:before{
 content:none;
 }
 
-#entry .navi ul.linklist li::after{
+div.navi ul.linklist li.home a:after{
+content:none;
+}
+
+div.navi ul.linklist li.primarycat a:before{
+content:none;
+}
+
+div.navi ul.linklist li.primarycat a:after{
 content:none;
 }
 
@@ -174,14 +192,6 @@ margin-right:auto;
 float:none;
 width:100%;
 }
-
-/*div.forpc{
-display:none;
-}
-
-div.formobile{
-display:block;
-}*/
 
 #entry #content #googlemaps{
 margin:10px auto;

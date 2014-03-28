@@ -8,6 +8,7 @@ elements:
     component: ~
     data: 
       - lightbox
+      - images
     importer: blog_static_files
   system_custom_fields: 
     component: commercial
