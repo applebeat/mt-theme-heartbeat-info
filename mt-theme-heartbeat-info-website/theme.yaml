@@ -2,13 +2,13 @@
 author_link: http://www.drivemenuts.com/
 author_name: Webmaster
 class: website
-description: WebSite用のテーマです。WebSiteに作成するブログには、旅行記なら「Heartbeat.info 旅行記ブログ」、旅行記ではないブログには「Heartbeat.info ノーマルブログ」をテーマとしてお使いください。
+description: ウェブサイト用のテーマです。ウェブサイト配下に作成するブログには、旅行記なら「Heartbeat.info 旅行記ブログ」、旅行記ではないブログには「Heartbeat.info ノーマルブログ」をテーマとしてお使いください。
 elements: 
   blog_static_files: 
     component: ~
     data: 
-      - lightbox
       - images
+      - lightbox
     importer: blog_static_files
   system_custom_fields: 
     component: commercial
@@ -204,8 +204,8 @@ elements:
         type: url
       websiteprologue: 
         default: ''
-        description: WebSiteの説明。前置き、プロローグなど...。
-        name: プロローグ（WebSite用）
+        description: ウェブサイトの説明。前置き、プロローグなど...。
+        name: プロローグ（ウェブサイト用）
         obj_type: website
         options: ~
         required: 0
@@ -333,7 +333,7 @@ elements:
           blogs: 
             label: ブログ一覧[旅行記以外]
           openid: 
-            label: Twitter（WebSite）
+            label: Twitter（ウェブサイト）
           pages_list: 
             label: ウェブページ一覧
           recent_entries_expanded: 
@@ -361,7 +361,7 @@ elements:
           template_4303: 
             label: 広告（メインコンテンツ用）02
           template_476: 
-            label: Facebook（WebSite）
+            label: Facebook（ウェブサイト）
         widgetset: 
           blog_activity: 
             label: 検索結果・タグクラウド検索結果ページ
@@ -370,22 +370,18 @@ elements:
               - サイト内検索
               - 新着情報
               - タグクラウド
-              - Facebook（WebSite）
-              - Twitter（WebSite）
               - ウェブページ一覧
               - 購読
               - 旅行記一覧
           main_sidebar: 
-            label: メインコンテンツ（WebSite）
+            label: メインコンテンツ（ウェブサイト）
             order: 1000
             widgets: 
               - 新着情報
               - 旅行記一覧
-              - Facebook（WebSite）
-              - Twitter（WebSite）
               - 広告（メインコンテンツ用）01
           template_477: 
-            label: 右サイドバー（WebSite）
+            label: 右サイドバー（ウェブサイト）
             order: 1000
             widgets: 
               - ブログ一覧[旅行記以外]
@@ -395,6 +391,6 @@ elements:
               - 広告（右サイドバー用）02
     importer: template_set
 id: mt-theme-heartbeat-info-website
-label: Heartbeat.info Webサイト
-name: Heartbeat.info Webサイト
+label: Heartbeat.info ウェブサイト
+name: Heartbeat.info ウェブサイト
 version: 1.0
