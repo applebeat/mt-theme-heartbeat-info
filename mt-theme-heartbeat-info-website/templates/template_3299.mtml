@@ -1,11 +1,20 @@
 <mt:Blogs include_blogs="children" mode="context" ignore_archive_context="1">
 <mt:SetVarBlock name="travelblog"><mt:If tag="BlogDataTravelblog"><mt:BlogDataTravelblog></mt:If></mt:SetVarBlock>
+<mt:SetVarBlock name="websiteurl"><mt:WebSiteURL></mtSetVarBlock>
 
 <mt:If name="travelblog" eq="旅行記である">
 <mt:Entries limit="1" sort_order="ascend"><mt:EntryDate format="%Y%m%d" setvar="entrydate"></mt:Entries>
-<mt:Assets tag="@blogmainimg" lastn="1"><mt:AssetThumbnailURL square="1" width="280" setvar="blogmainimg"></mt:Assets>
+
+<mt:SetVarBlock name="blogmainimgurl">
+<mt:Assets tag="@blogmainimg"><mt:SetVar name="blogmainimg" value="1"></mt:Assets>
+<mt:If name="blogmainimg">
+<mt:Assets tag="@blogmainimg" lastn="1"><mt:AssetThumbnailURL square="1" width="280"></mt:Assets>
+<mt:Else><mt:GetVar name="websiteurl">images/square_sample.jpg
+</mt:If>
+</mt:SetVarBlock>
+
 <mt:SetVarBlock name="blog_list" key="$entrydate">
-<li style="background-image:url(<mt:GetVar name="blogmainimg">);"><a href="<$mt:BlogURL$>" title="<$mt:BlogName$>">
+<li style="background-image:url(<mt:GetVar name="blogmainimgurl">);"><a href="<$mt:BlogURL$>" title="<$mt:BlogName$>">
 <div class="travel-caption">
 <span class="blogname"><mt:BlogName></span>
 <span class="travelperiod subtitle"><mt:Entries limit="1" sort_order="ascend"><mt:EntryDate format="%Y/%m/%d"></mt:Entries>〜<mt:Entries lastn="1" sort_order="descent"><mt:EntryDate format="%Y/%m/%d"></mt:Entries></span>

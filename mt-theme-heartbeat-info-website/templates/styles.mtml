@@ -315,12 +315,13 @@ padding:0 5px 0 25px;
 margin:0;
 }
 
-ul.checkimg{
+ul.listimg{
 list-style-type:none;
 }
 
-ul.checkimg li{
-list-style-image:url(<mt:If tag="@checkimg"><mt:WebSites><mtAssets tag="@checkimg"><mt:AssetURL></mtAssets></mt:WebSites><mt:Else><mt:WebSiteURL>images/check.png</mt:If>) ;
+<mt:WebSites><mt:Assets tag="@listimg"><mt:SetVar name="lsi" value="1"></mt:Assets></mt:WebSites>
+ul.listimg li{
+list-style-image:url(<mt:If name="lsi"><mt:WebSites><mt:Assets tag="@listimg"><mt:AssetThumbnailURL width="17" squaer="1"></mt:Assets></mt:WebSites><mt:Else><mt:WebSiteURL>images/listimg.png</mt:If>) ;
 margin:5px;
 }
 
@@ -328,14 +329,38 @@ margin:5px;
 padding-left:5px;
 }
 
-.widget ul.checkimg li.folder{
+.widget ul.listimg li.folder{
 list-style-image:none;
+}
+
+.widget ul li.rank-1{
+font-size:150%;
+}
+
+.widget ul li.rank-2{
+font-size:140%;
+}
+
+.widget ul li.rank-3{
+font-size:130%;
+}
+
+.widget ul li.rank-4{
+font-size:120%;
+}
+
+.widget ul li.rank-5{
+font-size:110%;
+}
+
+.widget ul li.rank-6{
+font-size:100%;
 }
 
 .widget ul li a{
 display:block;
 text-decoration:none;
-padding:2px;
+padding:2px 0;
 border-radius:5px;
 }
 
@@ -365,8 +390,9 @@ height:180px;
 overflow:auto;
 }
 
+<mt:WebSites><mt:Assets tag="@blank_window_link"><mt:SetVar name="bwl" value="1"></mt:Assets></mt:WebSites>
 a.targetblank::after{
-content:' ' url(<mt:If tag="@blank_window_link"><mt:WebSites><mt:Assets tag="@blank_window_link"><mt:AssetThumbnailURL width="17" height="17"></mt:Assets></mt:WebSites><mt:Else>http://www.heartbeat.info/images/blank_window_link.gif</mt:If>);
+content:' ' url(<mt:If name="bwl"><mt:WebSites><mt:Assets tag="@blank_window_link"><mt:AssetThumbnailURL width="17" squaer="1"></mt:Assets></mt:WebSites><mt:Else><mt:WebSiteURL>images/blank_window_link.gif</mt:If>);
 }
 
 /* ■■■右サイドバーのスタイルここから■■■ */
