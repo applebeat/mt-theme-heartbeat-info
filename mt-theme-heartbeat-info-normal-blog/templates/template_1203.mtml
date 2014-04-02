@@ -29,3 +29,20 @@ padding: 20px 10px;
 #entry #main-content{
 padding-left:0;
 }
+
+<mt:Assets tag="@listimg"><mt:SetVar name="lsi" value="1"></mt:Assets>
+<mt:If name="lsi">
+/* リストマーカー画像のスタイル */
+ul.listimg li{
+list-style-image:url(<mt:Assets tag="@listimg"><mt:AssetThumbnailURL width="17" squaer="1"></mt:Assets>) ;
+margin:5px;
+}
+</mt:If>
+
+<mt:Assets tag="@blank_window_link"><mt:SetVar name="bwl" value="1"></mt:Assets>
+<mt:If name="bwl">
+/* ブランクウィンドウアイコンのスタイル */
+a.targetblank::after{
+content:' ' url(<mt:Assets tag="@blank_window_link"><mt:AssetThumbnailURL width="17" squaer="1"></mt:Assets>);
+}
+</mt:If>
