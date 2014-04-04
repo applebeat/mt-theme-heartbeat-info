@@ -11,6 +11,6 @@ MovableType／ムーバブルタイプのテーマです。
 http://www.heartbeat.info  
 
 設定マニュアル  
-http://www.slideshare.net/applebeat/heartbeat-info
+http://www.slideshare.net/applebeat/heartbeat-info-33137265
 
 対応バージョン　MovableType 6  
