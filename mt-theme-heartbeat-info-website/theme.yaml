@@ -1,6 +1,6 @@
 --- 
 author_link: http://www.drivemenuts.com/
-author_name: Webmaster
+author_name: Yasuhiro Takahashi
 class: website
 description: ウェブサイト用のテーマです。ウェブサイト配下に作成するブログには、旅行記なら「Heartbeat.info 旅行記ブログ」、旅行記ではないブログには「Heartbeat.info ノーマルブログ」をテーマとしてお使いください。
 elements: 
@@ -273,6 +273,10 @@ elements:
             label: ブログ用スタイルシート
             outfile: css/blog_style_sheet.css
             rebuild_me: 1
+          template_8120: 
+            label: サイトマップ XMLファイル
+            outfile: sitemap.xml
+            rebuild_me: 1
         module: 
           comment_detail: 
             label: コメント詳細
@@ -370,7 +374,6 @@ elements:
               - サイト内検索
               - 新着情報
               - タグクラウド
-              - ウェブページ一覧
               - 購読
               - 旅行記一覧
           main_sidebar: 
@@ -389,6 +392,7 @@ elements:
               - タグクラウド
               - 広告（右サイドバー用）01
               - 広告（右サイドバー用）02
+              - 旅行記一覧
     importer: template_set
 id: mt-theme-heartbeat-info-website
 label: Heartbeat.info ウェブサイト

@@ -2,7 +2,7 @@
 <mt:WebSiteID setvar="thiswebsiteid">
 <mt:BlogID setvar="thisblogid">
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<mt:Ignore>ウェブサイトの情報</mt:Ignore>
    <url>
 
       <loc><mt:WebSiteURL></loc>
@@ -11,10 +11,10 @@
 
       <changefreq>monthly</changefreq>
 
-      <priority>1.0</priority>
+      <priority>0.8</priority>
 
    </url>
-
+<mt:Ignore>ブログトップの情報</mt:Ignore>
    <url>
 
       <loc><mt:BlogURL></loc>
@@ -26,20 +26,21 @@
       <priority>0.9</priority>
 
    </url>
-
+<mt:Ignore>カテゴリーページの情報</mt:Ignore>
 <mt:IfArchiveTypeEnabled archive_type="Category"><mt:ArchiveList archive_type="Category">
    <url>
 
       <loc><mt:ArchiveLink></loc>
 
-      <lastmod><mt:LastRebuildDate blog_id='$thisblogid' format="%Y-%m-%dT%H:%M:%S+09:00"></lastmod>
+      <lastmod><mt:Entries sort_by="modified_on" lastn="1"><mt:EntryDate format_name="iso8601"></mt:Entries></lastmod>
 
       <changefreq>weekly</changefreq>
 
-      <priority>0.5</priority>
+      <priority>0.6</priority>
 
    </url>
 </mt:ArchiveList></mt:IfArchiveTypeEnabled>
+<mt:Ignore>ブログ記事の情報</mt:Ignore>
 <mt:IfArchiveTypeEnabled archive_type="Individual"><mt:ArchiveList archive_type="Individual">
    <url>
 
@@ -49,10 +50,23 @@
 
       <changefreq>daily</changefreq>
 
-      <priority>0.8</priority>
+      <priority>1.0</priority>
 
    </url>
-</mt:ArchiveList>
-</mt:IfArchiveTypeEnabled>
+</mt:ArchiveList></mt:IfArchiveTypeEnabled>
 
+<mt:Ignore>ウェブページの情報</mt:Ignore>
+<mt:Pages>
+   <url>
+
+      <loc><mt:PagePermalink></loc>
+
+      <lastmod><mt:PageModifiedDate format_name="iso8601"></lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+</mt:Pages>
 </urlset> 

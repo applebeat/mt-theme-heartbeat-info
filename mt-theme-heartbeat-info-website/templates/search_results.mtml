@@ -1,16 +1,9 @@
 <mt:SetVarBlock name="website_id"><mt:WebsiteID></mt:SetVarBlock>
 <$MTInclude module="ヘッダー"$>
-
-<body id="category">
+<body class="website<mt:WebSiteID>">
 <div id="container">
 
-<div id="header">
-<div id="header-content">
-  <h1 id="website-name"><a href="<$mt:WebsiteURL$>"><$mt:WebsiteName encode_html="1"$></a></h1>
-  <h2 id="website-description"><a href="<$mt:WebsiteURL$>"><$mt:WebsiteDescription$></a></h2>
-  <mt:If tag="WebsiteDataHeaderpixcaption"><div class="header-pix-caption"><mt:WebsiteDataHeaderpixcaption></div></mt:If>
-</div>
-</div>
+<mt:Include module="HTMLヘッダー">
 
 <div id="content">
 
