@@ -12,7 +12,7 @@ http://www.heartbeat.info
 設定マニュアル  
 http://www.slideshare.net/applebeat/heartbeat-info-33137265  
 
-Heartbeat.infoテーマの特徴 
+Heartbeat.infoテーマの特徴  
 ・旅行ごとにブログを作成することで、旅行記をまとめた個人のポータル風 サイトが作れます。  
 ・レスポンシブ・ウェブ・デザインに対応したサイトが構築できます。  
 ・ウィジェットセットの設定でページ内レイアウトをドラッグ＆ドロップで 自由に設定・変更できます。  
