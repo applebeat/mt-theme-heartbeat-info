@@ -9,6 +9,8 @@ MovableType／ムーバブルタイプのテーマです。
 下記のサイトと同じものができます。  
 http://www.heartbeat.info  
 
+完全無償でご利用いただけますが、フッター部分のクレジットを消さないでご利用ください。  
+
 設定マニュアル  
 http://www.slideshare.net/applebeat/heartbeat-info-33137265  
 
