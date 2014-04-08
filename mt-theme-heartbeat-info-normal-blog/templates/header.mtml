@@ -20,7 +20,21 @@
 
 <mt:Include module="Viewportの設定" parent="1">
 
-<link rel="stylesheet" href="<$MTBlogURL$>styles-site.css" type="text/css" />
+<!-- スタイルシートここから -->
+<mt:WebSites>
+<link rel="stylesheet" href="<$mt:WebsiteURL$>css/original_style_sheet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebsiteURL$>css/blog_style_sheet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/websiteusercss.css" type="text/css" />
+</mt:WebSites>
+<!-- <mt:BlogName>のスタイル -->
+<link rel="stylesheet" href="<$MTBlogURL$>css/blog_style.css" type="text/css" />
+<link rel="stylesheet" href="<$MTBlogURL$>css/blogusercss.css" type="text/css" />
+<mt:WebSites>
+<!-- タブレット・スマートホン用のスタイル -->
+<link rel="stylesheet" href="<$mt:WebsiteURL$>css/css_for_tablet.css" type="text/css" />
+</mt:WebSites>
+<!-- スタイルシートここまで -->
+
 <link rel="alternate" type="application/atom+xml" title="Atom" href="<$MTBlogURL$>atom.xml" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<$MTBlogURL$>index.xml" />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$MTBlogURL$>rsd.xml" />

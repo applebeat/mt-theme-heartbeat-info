@@ -19,6 +19,7 @@
 <div class="action">
 
 <MTEntries>
+<mt:SetVarBlock name="entryimage"><MTEntryAssets lastn="1"><mt:AssetThumbnailURL width="180"></MTEntryAssets></mt:SetVarBlock>
 <dl>
 <dt>
 <a href="<$MTEntryPermalink$>" title="<$MTEntryTitle$>"><$MTEntryTitle$><br /><span class="date"><$MTEntryDate format="%Y/%m/%d %p%l:%M"$></span></a>
@@ -27,16 +28,11 @@
 <dd>
 <a href="<$MTEntryPermalink$>" title="<$MTEntryTitle$>">
 
-<mt:EntryAssets><mt:SetVar name="entryimage" value="1"></mt:EntryAssets>
-<mt:If tag="EntryDataEntrymainimg">
+<mt:If name="entryimage">
 <div class="thumb">
-<img src="<mt:EntryDataEntrymainimgAsset><MTAssetThumbnailURL width="180"></mt:EntryDataEntrymainimgAsset>" alt="<$MTEntryTitle$>" width="180" />
+<img src="<mt:GetVar name="entryimage">" alt="アイテム画像" width="180" />
 </div><!-- /thumb -->
-<MTElseIf name="entryimage">
-<div class="thumb">
-<img src="<MTEntryAssets lastn="1"><mt:AssetThumbnailURL width="180"></MTEntryAssets>" alt="<$MTEntryTitle$>" width="180" />
-</div><!-- /thumb -->
-</MTIf>
+</mt:If>
 
 <div class="right-of-img">
 <div class="entrydescription">

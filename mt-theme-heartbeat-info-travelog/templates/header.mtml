@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<html lang="ja" id="sixapart-standard">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<$MTPublishCharset$>" />
 <script type="text/javascript" src="<$mt:Link template="javascript"$>"></script>
@@ -20,7 +20,25 @@
 
 <mt:Include module="Viewportの設定" parent="1">
 
+<!-- スタイルシートここから -->
+<mt:WebSites>
+<link rel="stylesheet" href="<$mt:WebsiteURL$>css/original_style_sheet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebsiteURL$>css/blog_style_sheet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/websiteusercss.css" type="text/css" />
+</mt:WebSites>
+<!-- <mt:BlogName>のスタイル -->
+<link rel="stylesheet" href="<$MTBlogURL$>css/blog_style.css" type="text/css" />
+<link rel="stylesheet" href="<$MTBlogURL$>css/blogusercss.css" type="text/css" />
+<mt:WebSites>
+<!-- タブレット・スマートホン用のスタイル -->
+<link rel="stylesheet" href="<$mt:WebsiteURL$>css/css_for_tablet.css" type="text/css" />
+</mt:WebSites>
+
+<mt:Ignore>
 <link rel="stylesheet" href="<$MTBlogURL$>styles-site.css" type="text/css" />
+</mt:Ignore>
+<!-- スタイルシートここまで -->
+
 <link rel="alternate" type="application/atom+xml" title="Atom" href="<$MTBlogURL$>atom.xml" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<$MTBlogURL$>index.xml" />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$MTBlogURL$>rsd.xml" />
@@ -33,7 +51,6 @@
 <!-- ＊＊＊＊＊jQueryここまで＊＊＊＊＊ -->
 
 <MTIf name="entry_archive">
-
 <!-- ＊＊＊＊＊jQuery.lightboxここから＊＊＊＊＊ -->
 <script type="text/javascript" src="<mt:WebSiteURL>lightbox/js/lightbox-2.6.min.js"></script>
 <link rel="stylesheet" href="<mt:WebSiteURL>lightbox/css/lightbox.css" type="text/css" media="screen" />

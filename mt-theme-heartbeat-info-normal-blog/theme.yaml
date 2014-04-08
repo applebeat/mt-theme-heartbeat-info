@@ -39,21 +39,21 @@ elements:
             label: RSS
             outfile: rss.xml
             rebuild_me: 1
-          styles: 
-            label: スタイルシート(メイン)
-            outfile: styles-site.css
-            rebuild_me: 1
           template_1202: 
             label: サイトマップ XMLファイル
             outfile: sitemap.xml
             rebuild_me: 1
           template_1203: 
             label: ブログスタイルシート
-            outfile: blog_style.css
+            outfile: css/blog_style.css
             rebuild_me: 1
           template_437: 
             label: オリジナルjQueryファイル
             outfile: original_jquery.js
+            rebuild_me: 1
+          template_8083: 
+            label: ブログユーザースタイルシート
+            outfile: css/blogusercss.css
             rebuild_me: 1
         individual: 
           entry: 
@@ -185,7 +185,6 @@ elements:
             order: 1000
             widgets: 
               - ブログ内検索
-              - ナビゲーション（前・カテゴリー・後）
               - カテゴリー一覧
               - 広告（右サイドバー用）01
               - Facebook
@@ -241,4 +240,4 @@ elements:
 id: mt-theme-heartbeat-info-normal-blog
 label: Heartbeat.info ノーマルブログ
 name: Heartbeat.info ノーマルブログ
-version: 1.0
+version: 1.1

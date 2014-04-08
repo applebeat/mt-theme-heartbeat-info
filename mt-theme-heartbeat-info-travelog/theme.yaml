@@ -115,21 +115,21 @@ elements:
             label: RSS
             outfile: rss.xml
             rebuild_me: 1
-          styles: 
-            label: スタイルシート(メイン)
-            outfile: styles-site.css
-            rebuild_me: 1
           template_1202: 
             label: サイトマップ XMLファイル
             outfile: sitemap.xml
             rebuild_me: 1
           template_1203: 
             label: ブログスタイルシート
-            outfile: blog_style.css
+            outfile: css/blog_style.css
             rebuild_me: 1
           template_437: 
             label: オリジナルjQueryファイル
             outfile: original_jquery.js
+            rebuild_me: 1
+          template_8481: 
+            label: ブログユーザースタイルシート
+            outfile: css/blogusercss.css
             rebuild_me: 1
         individual: 
           entry: 
@@ -321,4 +321,4 @@ elements:
 id: mt-theme-heartbeat-info-travelog
 label: Heartbeat.info 旅行記ブログ
 name: Heartbeat.info 旅行記ブログ
-version: 1.0
+version: 1.1
