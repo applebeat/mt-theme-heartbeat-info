@@ -177,6 +177,7 @@ elements:
               - ブログ内検索
               - カテゴリー一覧
               - 広告（右サイドバー用）01
+              - フリースペースウェブサイト01
               - Facebook
               - Twitter
               - 広告（右サイドバー用）02
@@ -187,6 +188,7 @@ elements:
               - ブログ内検索
               - カテゴリー一覧
               - 広告（右サイドバー用）01
+              - フリースペースウェブサイト01
               - Facebook
               - Twitter
               - 広告（右サイドバー用）02
@@ -216,9 +218,10 @@ elements:
             order: 1000
             widgets: 
               - ブログ内検索
-              - タグクラウド
+              - フリースペースウェブサイト01
               - 広告（右サイドバー用）01
               - 広告（右サイドバー用）02
+              - タグクラウド
           template_4696: 
             label: ブログ記事一覧のメイン部分02
             order: 1000
@@ -234,10 +237,11 @@ elements:
             order: 1000
             widgets: 
               - カテゴリー一覧
+              - フリースペースウェブサイト01
               - 広告（右サイドバー用）01
               - 広告（右サイドバー用）02
     importer: template_set
 id: mt-theme-heartbeat-info-normal-blog
 label: Heartbeat.info ノーマルブログ
 name: Heartbeat.info ノーマルブログ
-version: 1.1.1
+version: 1.1.2

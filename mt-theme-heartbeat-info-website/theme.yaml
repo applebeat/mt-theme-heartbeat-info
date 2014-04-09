@@ -395,9 +395,11 @@ elements:
             widgets: 
               - サイト内検索
               - 新着情報
+              - 広告（右サイドバー用）01
+              - 広告（右サイドバー用）02
               - タグクラウド
+              - フリースペースウェブサイト01
               - 購読
-              - 旅行記一覧
           main_sidebar: 
             label: メインコンテンツ（ウェブサイト）
             order: 1000
@@ -422,4 +424,4 @@ elements:
 id: mt-theme-heartbeat-info-website
 label: Heartbeat.info ウェブサイト
 name: Heartbeat.info ウェブサイト
-version: 1.1.1
+version: 1.1.2

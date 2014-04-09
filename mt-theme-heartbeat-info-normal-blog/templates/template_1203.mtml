@@ -1,4 +1,10 @@
 @charset "utf-8";
+<mt:WebSites>
+@import "<$mt:WebsiteURL$>css/original_style_sheet.css";
+@import "<$mt:WebsiteURL$>css/blog_style_sheet.css";
+@import "<$mt:WebSiteURL$>css/websiteusercss.css";
+</mt:WebSites>
+
 <mt:Ignore>
 /* ■■■全体のスタイル■■■ */
 /* ■■■右サイドバーのスタイル■■■ */
@@ -28,6 +34,10 @@ padding: 20px 10px;
 
 #entry #main-content{
 padding-left:0;
+}
+
+#entry #main-content-inner{
+padding-left:3px;
 }
 
 <mt:Assets tag="@listimg"><mt:SetVar name="lsi" value="1"></mt:Assets>

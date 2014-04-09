@@ -2,7 +2,7 @@
 author_link: http://www.drivemenuts.com/
 author_name: Yasuhiro Takahashi
 class: blog
-description: 旅行記用のブログのテーマです。WebSite用のテーマとセットでご利用ください。旅行記ではないブログにはテーマ「Heartbeat.info ノーマルブログ」をお使いください。
+description: ''
 elements: 
   custom_fields: 
     component: commercial
@@ -261,6 +261,7 @@ elements:
               - カテゴリー一覧
               - 広告（右サイドバー用）01
               - 旅行の動画（カテゴリー別）
+              - フリースペースウェブサイト01
               - Facebook
               - Twitter
               - 広告（右サイドバー用）02
@@ -274,6 +275,7 @@ elements:
               - 旅行の動画（ブログ記事別）
               - 関連サイトリンク集
               - カテゴリー一覧
+              - フリースペースウェブサイト01
               - Facebook
               - Twitter
               - 広告（右サイドバー用）02
@@ -304,9 +306,10 @@ elements:
             order: 1000
             widgets: 
               - ブログ内検索
-              - タグクラウド
+              - フリースペースウェブサイト01
               - 広告（右サイドバー用）01
               - 広告（右サイドバー用）02
+              - タグクラウド
           template_4696: 
             label: ブログ記事一覧のメイン部分02
             order: 1000
@@ -321,4 +324,4 @@ elements:
 id: mt-theme-heartbeat-info-travelog
 label: Heartbeat.info 旅行記ブログ
 name: Heartbeat.info 旅行記ブログ
-version: 1.1.1
+version: 1.1.2
