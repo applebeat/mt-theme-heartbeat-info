@@ -4,9 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=<$mt:PublishCharset$>" />
     <mt:Include module="Viewportの設定">
 <!-- スタイルシートここから -->
-    <link rel="stylesheet" href="<$mt:WebSiteURL$>css/original_style_sheet.css" type="text/css" />
-    <link rel="stylesheet" href="<$mt:WebSiteURL$>css/websiteusercss.css" type="text/css" />
-    <link rel="stylesheet" href="<$mt:WebSiteURL$>css/css_for_tablet.css" type="text/css" />
+    <link rel="stylesheet" href="<$mt:WebSiteURL$>css/websitecss.css" type="text/css" />
 <!-- スタイルシートここまで -->
     <link rel="start" href="<$mt:WebsiteURL$>" title="ホーム" />
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
@@ -15,6 +13,12 @@
 <mt:If name="main_index">
 <mt:Include module="Open Graph Protocol for WebSite">
 </mt:If>
+
+<mt:Assets include_blogs="siblings" include_with_website="1"><mt:AssetIfTagged tag="@tablet-touch-icon">
+<meta name="msapplication-config" content="<mt:WebsiteURL>browserconfig.xml" />
+<mt:include module="tablet-touch-icon">
+</mt:AssetIfTagged></mt:Assets>
+
 <mt:If tag="WebsiteDataGoogleanalytics">
 <mt:WebsiteDataGoogleanalytics convert_breaks="0">
 </mt:If>

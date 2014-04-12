@@ -1,9 +1,4 @@
-@charset "utf-8";
-
-@import "<$mt:WebsiteURL$>css/original_style_sheet.css";
-@import "<$mt:WebsiteURL$>css/blog_style_sheet.css";
-@import "<$mt:WebSiteURL$>css/websiteusercss.css";
-
+/* ブログスタイルシートここから */
 <mt:Ignore>
 /* ■■■全体のスタイル■■■ */
 /* ■■■右サイドバーのスタイル■■■ */
@@ -18,7 +13,7 @@
 /* ■■■全体のスタイル■■■ */
 #header{
 color: #ffffff;
-background: #000000 url(<mt:If tag="BlogDataHeaderimage"><mt:BlogDataHeaderimage><mt:Else><mt:WebSites><mt:Assets tag="@sampleimage"><mt:AssetURL></mt:Assets></mt:WebSites></mt:If>) center center no-repeat;
+background: #000000 url(<mt:If tag="BlogDataHeaderimage"><mt:BlogDataHeaderimage><mt:Else><mt:WebsiteURL>images/header_background_sample.jpg</mt:If>) center center no-repeat;
 background-size:cover;
 height:250px;
 }
@@ -28,7 +23,7 @@ border-width:0;
 }
 
 #home #container #content #prologue{
-background-image:url(<mt:If tag="BlogDataHeaderimage"><mt:BlogDataHeaderimage></mt:If>);
+background-image:url(<mt:If tag="BlogDataHeaderimage"><mt:BlogDataHeaderimage><mt:Else><mt:WebsiteURL>images/header_background_sample.jpg</mt:If>);
 }
 
 <mt:Assets tag="@listimg"><mt:SetVar name="lsi" value="1"></mt:Assets>
@@ -47,3 +42,4 @@ a.targetblank::after{
 content:' ' url(<mt:Assets tag="@blank_window_link"><mt:AssetThumbnailURL width="17" squaer="1"></mt:Assets>);
 }
 </mt:If>
+/* ブログスタイルシートここまで */

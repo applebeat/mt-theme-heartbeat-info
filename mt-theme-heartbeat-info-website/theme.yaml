@@ -272,32 +272,44 @@ elements:
             outfile: rsd.xml
             rebuild_me: 1
           styles: 
+            build_type: 0
             label: オリジナルスタイルシート
             outfile: css/original_style_sheet.css
-            rebuild_me: 1
+            rebuild_me: 0
           template_320: 
             label: サイトマップインデックス XMLファイル
             outfile: sitemapindex.xml
             rebuild_me: 1
           template_3441: 
+            build_type: 0
             label: タブレット用スタイルシート
             outfile: css/css_for_tablet.css
-            rebuild_me: 1
+            rebuild_me: 0
           template_4101: 
             label: robots.txtファイル
             outfile: robots.txt
             rebuild_me: 1
           template_6151: 
+            build_type: 0
             label: ブログ用スタイルシート
             outfile: css/blog_style_sheet.css
-            rebuild_me: 1
+            rebuild_me: 0
           template_8120: 
             label: サイトマップ XMLファイル
             outfile: sitemap.xml
             rebuild_me: 1
           template_8519: 
+            build_type: 0
             label: ウェブサイトユーザースタイルシート
             outfile: css/websiteusercss.css
+            rebuild_me: 0
+          template_9559: 
+            label: Webサイト用カスタム タイル for IE11
+            outfile: browserconfig.xml
+            rebuild_me: 1
+          template_9564: 
+            label: ウェブサイトスタイルシート
+            outfile: css/websitecss.css
             rebuild_me: 1
         module: 
           comment_detail: 
@@ -332,6 +344,16 @@ elements:
             label: Viewportの設定
           template_5108: 
             label: HTMLヘッダー
+          template_9558: 
+            label: tablet-touch-icon
+          template_9560: 
+            label: スタイルシート：オリジナルスタイルシート：original_style_sheet
+          template_9561: 
+            label: スタイルシート：ブログ用スタイルシート：blog_style_sheet
+          template_9562: 
+            label: スタイルシート：タブレット用スタイルシート：css_for_tablet
+          template_9563: 
+            label: スタイルシート：ウェブサイトユーザースタイルシート：websiteusercss
           trackbacks: 
             label: トラックバック
         page: 
@@ -418,10 +440,10 @@ elements:
               - 広告（右サイドバー用）01
               - 広告（右サイドバー用）02
               - タグクラウド
-              - 旅行記一覧
               - 購読
+              - 旅行記一覧
     importer: template_set
 id: mt-theme-heartbeat-info-website
 label: Heartbeat.info ウェブサイト
 name: Heartbeat.info ウェブサイト
-version: 1.1.2
+version: 1.1.3
