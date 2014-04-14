@@ -79,7 +79,7 @@ elements:
           entry_summary: 
             label: ブログ記事の概要
           footer: 
-            label: フッターコンテナ
+            label: フッター
           header: 
             label: ヘッダー
           page_detail: 
@@ -244,4 +244,4 @@ elements:
 id: mt-theme-heartbeat-info-normal-blog
 label: Heartbeat.info ノーマルブログ
 name: Heartbeat.info ノーマルブログ
-version: 1.1.3
+version: 1.1.5

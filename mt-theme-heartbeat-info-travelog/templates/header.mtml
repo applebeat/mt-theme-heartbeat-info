@@ -21,7 +21,12 @@
 <mt:Include module="Viewportの設定" parent="1">
 
 <!-- スタイルシートここから -->
-<link rel="stylesheet" href="<$MTBlogURL$>css/blog.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/original_style_sheet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/blog_style_sheet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:BlogURL$>css/blog_style.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/css_for_tablet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/websiteusercss.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:BlogURL$>css/blogusercss.css" type="text/css" />
 <!-- スタイルシートここまで -->
 
 <link rel="alternate" type="application/atom+xml" title="Atom" href="<$MTBlogURL$>atom.xml" />
@@ -75,10 +80,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <$MTInclude module="Open Graph Protocol"$>
 
-<mt:Assets include_blogs="siblings" include_with_website="1"><mt:AssetIfTagged tag="@tablet-touch-icon">
-<meta name="msapplication-config" content="<mt:WebsiteURL>browserconfig.xml" />
-<mt:include module="tablet-touch-icon" parent="1">
-</mt:AssetIfTagged></mt:Assets>
+<mt:include module="touch-icon" parent="1">
 
 <mt:If tag="WebsiteDataGoogleanalytics">
 <mt:WebsiteDataGoogleanalytics convert_breaks="0">
