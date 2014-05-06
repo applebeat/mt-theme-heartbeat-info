@@ -16,7 +16,7 @@ elements:
             mappings: 
               category: 
                 archive_type: Category
-                file_template: category/category<MTCategoryID>.html
+                file_template: category/category_<mt:CategoryBasename>.html
                 preferred: 1
         index: 
           atom: 
@@ -61,7 +61,7 @@ elements:
             mappings: 
               individual: 
                 archive_type: Individual
-                file_template: entry/entry<mt:EntryID>.html
+                file_template: entry/entry_<$MTEntryDate format="%Y%m%d%H%M%S"$>.html
                 preferred: 1
         module: 
           categories: 
@@ -244,4 +244,4 @@ elements:
 id: mt-theme-heartbeat-info-normal-blog
 label: Heartbeat.info ノーマルブログ
 name: Heartbeat.info ノーマルブログ
-version: 1.1.5
+version: 1.1.6

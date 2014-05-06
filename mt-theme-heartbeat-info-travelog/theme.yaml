@@ -1,5 +1,5 @@
 --- 
-author_link: http://www.drivemenuts.com
+author_link: http://www.drivemenuts.com/
 author_name: Yasuhiro Takahashi
 class: blog
 description: 旅行記用のブログのテーマです。WebSite用のテーマとセットでご利用ください。旅行記ではないブログにはテーマ「Heartbeat.info ノーマルブログ」をお使いください。
@@ -92,7 +92,7 @@ elements:
             mappings: 
               category: 
                 archive_type: Category
-                file_template: category/category<MTCategoryID>.html
+                file_template: category/category_<mt:CategoryBasename>.html
                 preferred: 1
         index: 
           atom: 
@@ -137,7 +137,7 @@ elements:
             mappings: 
               individual: 
                 archive_type: Individual
-                file_template: entry/entry<mt:EntryID>.html
+                file_template: entry/entry_<$MTEntryDate format="%Y%m%d%H%M%S"$>.html
                 preferred: 1
         module: 
           categories: 
@@ -324,4 +324,4 @@ elements:
 id: mt-theme-heartbeat-info-travelog
 label: Heartbeat.info 旅行記ブログ
 name: Heartbeat.info 旅行記ブログ
-version: 1.1.5
+version: 1.1.6
