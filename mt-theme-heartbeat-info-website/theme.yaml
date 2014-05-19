@@ -1,5 +1,5 @@
 --- 
-author_link: http://www.drivemenuts.com/
+author_link: http://www.drivemenuts.com
 author_name: Yasuhiro Takahashi
 class: website
 description: ウェブサイト用のテーマです。ウェブサイト配下に作成するブログには、旅行記なら「Heartbeat.info 旅行記ブログ」、旅行記ではないブログには「Heartbeat.info ノーマルブログ」をテーマとしてお使いください。
@@ -430,4 +430,4 @@ elements:
 id: mt-theme-heartbeat-info-website
 label: Heartbeat.info ウェブサイト
 name: Heartbeat.info ウェブサイト
-version: 1.1.6
+version: 1.1.7

@@ -70,8 +70,6 @@ elements:
             label: コメント詳細
           comment_form: 
             label: コメント入力フォーム
-          comments: 
-            label: コメント
           entry_detail: 
             label: ブログ記事の詳細
           entry_metadata: 
@@ -92,8 +90,6 @@ elements:
             label: サイトのトップに戻る
           template_879: 
             label: HTMLヘッダー
-          trackbacks: 
-            label: トラックバック
         page: 
           page: 
             label: ウェブページ
@@ -116,6 +112,10 @@ elements:
           search_results: 
             label: 検索結果
         widget: 
+          template_10727: 
+            label: コメント
+          template_10728: 
+            label: トラックバック
           template_3269: 
             label: フリースペースブログ01
           template_3270: 
@@ -230,8 +230,9 @@ elements:
           template_4764: 
             label: ブログ記事のメイン部分03
             order: 1000
-            widgets: []
-
+            widgets: 
+              - コメント
+              - トラックバック
           template_5345: 
             label: ブログのトップページの右サイドバー
             order: 1000
@@ -244,4 +245,4 @@ elements:
 id: mt-theme-heartbeat-info-normal-blog
 label: Heartbeat.info ノーマルブログ
 name: Heartbeat.info ノーマルブログ
-version: 1.1.6
+version: 1.1.7
