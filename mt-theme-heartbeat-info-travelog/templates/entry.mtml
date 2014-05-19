@@ -16,15 +16,15 @@
 <div id="entry-content">
 <div class="contentblock">
 <div id="main-content">
+<div id="main-content-inner">
 <$MTEntryBody image_max_size="548"$>
 <$MTEntryMore image_max_size="548"$>
 <$mt:WidgetSet name="ブログ記事のメイン部分01"$>
+</div><!-- /main-content-inner -->
 </div><!-- /main-content -->
 
 <div id="sub-content" class="sub-content">
-
 <$mt:WidgetSet name="ブログ記事の右サイドバー"$>
-
 </div><!-- /sub-content -->
 
 <mt:If tag="EntryDataGooglemaps">
@@ -53,14 +53,8 @@
 </div><!-- /to-top -->
 
 <$mt:WidgetSet name="ブログ記事のメイン部分02"$>
-
-<!-- ■■■■■ここからコメント／トラックバック■■■■■ -->
-<mt:Include module="コメント">
-
-<mt:Include module="トラックバック">
-<!-- ■■■■■ここまでコメント／トラックバック■■■■■ -->
-
 <$mt:WidgetSet name="ブログ記事のメイン部分03"$>
+
 <$mt:Include widget="ナビゲーション（前・カテゴリー・後）"$>
 
 </div><!-- /entry-content -->
@@ -74,6 +68,5 @@
 <$mt:Include module="フッター"$>
 
 </div><!-- container -->
-
 </body>
 </html>

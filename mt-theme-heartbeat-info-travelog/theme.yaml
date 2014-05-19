@@ -146,8 +146,6 @@ elements:
             label: コメント詳細
           comment_form: 
             label: コメント入力フォーム
-          comments: 
-            label: コメント
           entry_detail: 
             label: ブログ記事の詳細
           entry_metadata: 
@@ -168,8 +166,6 @@ elements:
             label: サイトのトップに戻る
           template_879: 
             label: HTMLヘッダー
-          trackbacks: 
-            label: トラックバック
         page: 
           page: 
             label: ウェブページ
@@ -192,6 +188,10 @@ elements:
           search_results: 
             label: 検索結果
         widget: 
+          template_10656: 
+            label: コメント
+          template_10657: 
+            label: トラックバック
           template_3039: 
             label: 旅行の動画（カテゴリー別）
           template_3269: 
@@ -318,8 +318,9 @@ elements:
           template_4764: 
             label: ブログ記事のメイン部分03
             order: 1000
-            widgets: []
-
+            widgets: 
+              - コメント
+              - トラックバック
     importer: template_set
 id: mt-theme-heartbeat-info-travelog
 label: Heartbeat.info 旅行記ブログ
