@@ -12,17 +12,6 @@
 </mt:If>
 </mt:SetVarBlock>
 
-<mt:Ignore>
-<mt:SetVarBlock name="websiteurl"><mt:WebSiteURL></mtSetVarBlock>
-<mt:SetVarBlock name="blogmainimgurl">
-<mt:Assets tag="@blogmainimg"><mt:SetVar name="blogmainimg" value="1"></mt:Assets>
-<mt:If name="blogmainimg">
-<mt:Assets tag="@blogmainimg" lastn="1"><mt:AssetThumbnailURL square="1" width="280"></mt:Assets>
-<mt:Else><mt:GetVar name="websiteurl">images/square_sample.jpg
-</mt:If>
-</mt:SetVarBlock>
-</mt:Ignore>
-
 <mt:SetVarBlock name="blog_list" key="$entrydate">
 <li id="hb<mt:BlogID>" style="background-image:url(<mt:GetVar name="blogmainimgurl">);"><a href="<$mt:BlogURL$>" title="<$mt:BlogName$>">
 <div class="travel-caption">

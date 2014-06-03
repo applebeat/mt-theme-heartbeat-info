@@ -1,26 +1,25 @@
-<mt:Ignore>
-$(function(){
-$("#youtube-content").css("display","none");
-$("#display-on-off").click(function(){
-$("#youtube-content").slideToggle("slow");
-});
-});
+$(document).ready(function(){
+var $eleW = $("div.movie iframe").attr("width");
+var $eleH = $("div.movie iframe").attr("height");
 
+var $aspectRatio = ($eleH / $eleW) * 100 + "%";
 
-/* 先読みする画像の配列 */
-var images_ary=new Array(
-'images/img/cards-4.png',
-'images/img/cards-5.png',
-'images/img/cards-6.png',
-'images/img/cards-7.png'
-);
-/* 画像先読み処理関数 */
-function preLoad(imgAry) {
-   var imgMax=imgAry.length;
-   var images=new Array(imgMax);
-   for (var i=0; i<imgMax; i++) {
-        images[i]=new Image();
-        images[i].src=imgAry[i];
-    }
+$("div.movie").css('padding-top',$aspectRatio);
+
 }
-</mt:Ignore>
+);
+
+/*
+ここから下は作成途中のテスト
+$(function(){
+var $eleW = $("div.movie iframe").width();
+var $eleH = $("div.movie iframe").height();
+
+var $aspectRatio = "'" ($eleH / $eleW) * 100 "'" ;
+
+$("div.movie").css('padding-top',$aspectRatio);
+
+$("div.movie").text($aspectRatio);
+}
+);
+*/

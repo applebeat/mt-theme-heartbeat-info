@@ -10,7 +10,7 @@
 <$mt:Include widget="ナビゲーション（前・カテゴリー・後）"$>
 
 <div id="entry-title">
-<h2><span id="title-date"><$MTEntryDate format="%Y/%m/%d %p%l:%M"$>頃...</span><br /><$MTEntryTitle$></h2>
+<h2><span id="title-date"><$MTEntryDate format="%Y/%m/%d %p%l:%M"$>頃...</span><br /><$MTEntryTitle encode_html="1"$></h2>
 </div>
 
 <div id="entry-content">
@@ -27,7 +27,7 @@
 <$mt:WidgetSet name="ブログ記事の右サイドバー"$>
 </div><!-- /sub-content -->
 
-<mt:If tag="EntryDataGooglemaps">
+<mt:EntryIfPositioned>
 <div class="to-top">
 <a href="#container">↑このページのトップへ</a>
 </div><!-- /to-top -->
@@ -46,7 +46,28 @@
 <!-- Google StreetViewここまで -->
 <div id="googlemapsfooter"><span class="mapstview">地図とストリートビューは連動しています！</span></div>
 </div><!-- googlemapswrapper -->
-</mt:If>
+
+<mt:ElseIf tag="EntryDataGooglemaps">
+<div class="to-top">
+<a href="#container">↑このページのトップへ</a>
+</div><!-- /to-top -->
+</div><!-- /contentblock -->
+
+<div id="googlemapswrapper" class="contentblock">
+<!-- Google Mapsここから -->
+<div id="googlemaps">
+<div id="map"></div>
+</div><!-- /googlemaps -->
+<!-- Google Mapsここまで -->
+<!-- Google StreetViewここから -->
+<div id="gsv">
+<div id="viewarea"></div>
+</div><!-- /gsv -->
+<!-- Google StreetViewここまで -->
+<div id="googlemapsfooter"><span class="mapstview">地図とストリートビューは連動しています！</span></div>
+</div><!-- googlemapswrapper -->
+
+</mt:EntryIfPositioned>
 
 <div class="to-top">
 <a href="#container">↑このページのトップへ</a>

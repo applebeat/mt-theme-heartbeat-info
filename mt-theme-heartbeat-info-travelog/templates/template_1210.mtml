@@ -1,12 +1,12 @@
 <!-- OGPの設定ここから -->
 <meta property="og:locale" content="ja_jp" />
 <meta property="og:type" content="blog" />
-<meta property="og:site_name" content="<$MTBlogName$>" />
+<meta property="og:site_name" content="<$MTBlogName encode_html="1"$>" />
 
 <MTIf name="entry_archive">
-<meta property="og:title" content="<$MTEntryTitle$>" />
+<meta property="og:title" content="<$MTEntryTitle encode_html="1"$>" />
 <meta property="og:url" content="<$MTEntryPermalink$>" />
-<meta property="og:description" content="<mt:If tag="EntryExcerpt"><$mt:EntryExcerpt remove_html="1" convert_breaks="0"$><mt:Else><$MTEntryBody words="100" remove_html="1" convert_breaks="0" strip_linefeeds="1"$></mt:If>" />
+<meta property="og:description" content="<mt:If tag="EntryExcerpt"><$mt:EntryExcerpt remove_html="1" convert_breaks="0" encode_html="1"$><mt:Else><$MTEntryBody words="100" remove_html="1" convert_breaks="0" strip_linefeeds="1" encode_html="1"$></mt:If>" />
 
 <mt:EntryAssets><mt:SetVar name="uploadedentryassets" value="1"></mt:EntryAssets>
 <mt:If tag="EntryDataEntrymainimg">
@@ -27,9 +27,9 @@
 
 
 <MTElseIf name="archive_listing">
-<meta property="og:title" content="<$MTArchiveTitle$>&nbsp;-&nbsp;<$MTBlogName$>" />
+<meta property="og:title" content="<$MTArchiveTitle encode_html="1"$>&nbsp;-&nbsp;<$MTBlogName$>" />
 <meta property="og:url" content="<$MTArchivelink$>" />
-<meta property="og:description" content="<$MTBlogDescription$>" />
+<meta property="og:description" content="<$MTBlogDescription encode_html="1"$>" />
 
 <mt:Entries><mt:Assets><mt:SetVar name="catentriesassets" value="1"></mt:Assets></mt:Entries>
 <mt:If tag="CategoryDataCategorymainimg">
@@ -46,9 +46,9 @@
 
 
 <MTElseIf name="page_archive">
-<meta property="og:title" content="<$MTPageTitle$>" />
+<meta property="og:title" content="<$MTPageTitle encode_html="1"$>" />
 <meta property="og:url" content="<$MTPagePermalink$>" />
-<meta property="og:description" content="<$MTPageBody words="100"$>" />
+<meta property="og:description" content="<$MTPageBody words="100" encode_html="1"$>" />
 
 <mt:PageAssets><mt:SetVar name="pageimg" value="1"></mt:PageAssets>
 <mt:If name="pageimg">
@@ -63,9 +63,9 @@
 
 
 <MTElse>
-<meta property="og:title" content="<$MTBlogName$>" />
+<meta property="og:title" content="<$MTBlogName encode_html="1"$>" />
 <meta property="og:url" content="<$MTBlogURL$>" />
-<meta property="og:description" content="<$MTBlogDescription$>" />
+<meta property="og:description" content="<$MTBlogDescription encode_html="1"$>" />
 
 <mt:Assets><mt:SetVar name="uploadedblogassets" value="1"></mt:Assets>
 <mt:If tag="BlogDataHeaderimage">
