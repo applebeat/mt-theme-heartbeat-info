@@ -231,13 +231,15 @@ overflow:visible;
 }
 
 #home #top-main-menu ul li{
+position:relative;
 display:inline-block;
-border:15px solid #ffffff;
-width:300px;
+width:330px;
 background-color:#ffffff;
 padding:0;
+/*
 box-shadow:5px 5px 8px rgba(0,0,0,0.3), -1px -1px 3px rgba(0,0,0,0.3);
-position:relative;
+border:15px solid #ffffff;
+*/
 }
 
 #home #top-main-menu ul li:nth-child(odd){
@@ -273,6 +275,7 @@ transform: rotate(-8deg);
 }
 
 #home #top-main-menu ul li a{
+position:relative;
 display: block;
 text-decoration:none;
 text-align:center;
@@ -282,7 +285,9 @@ padding:0;
 width:300px;
 height:300px;
 background-color:#ffffff;
-position:relative;
+
+box-shadow:5px 5px 8px rgba(0,0,0,0.3), -1px -1px 3px rgba(0,0,0,0.3);
+border:15px solid #ffffff;
 }
 
 #home #top-main-menu ul li a span{
@@ -431,8 +436,7 @@ margin-right:5px;
 #category .action dl dd .right-of-img div{
 margin-left:5px;
 margin-right:5px;
-/*height:100px;*/
-max-height:100px;
+height:100px;
 overflow:visible;
 background-color:transparent;
 }
@@ -485,7 +489,7 @@ box-shadow: 2px 2px 2px #cccccc , -1px 2px 2px #cccccc , -1px -1px 2px #cccccc ,
 -o-box-shadow: 2px 2px 2px #cccccc , -1px 2px 2px #cccccc , -1px -1px 2px #cccccc , 2px -1px 2px #cccccc;
 background-color: #fffffd;
 padding: 10px;
-margin-top: 0;
+margin: 0;
 }
 
 #entry #content #googlemaps{

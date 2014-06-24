@@ -128,29 +128,52 @@ div#container #content #main-content .travels .travellist ul{
 text-align:center;
 }
 
+div#container #content #main-content .travels .travellist ul li{
+width:43%;
+}
+
+div#container #content #main-content .travels .travellist ul li a{
+width:100%;
+}
+
 /* ■■■WebSite Topページのレイアウトここから■■■ */
 
 /* ■■■各旅行記ブログのスタイルここから■■■ */
 /* ■■■トップページ用■■■ */
 #home #top-main-menu ul.clearfix{
+box-sizing:border-box;
 width:100%;
 text-align:center;
 padding:0;
+overflow:hidden;
+padding:0 3%;
 }
 
 #home #top-main-menu ul.clearfix li{
+/*
 box-sizing:border-box;
 -moz-box-sizing:border-box;
 -webkit-box-sizing:border-box;
+border-width:12px;
 display:inline-block;
+*/
+
+display:block;
 transform: rotate(0);
 -webkit-transform: rotate(0);
 -o-transform: rotate(0);
 -ms-transform: rotate(0);
-overflow:hidden;
-width:45%;
+/*overflow:hidden;*/
+width:46%;
 margin:10px;
-border-width:12px;
+}
+
+#home #top-main-menu ul.clearfix li:nth-child(odd){
+float:left;
+}
+
+#home #top-main-menu ul.clearfix li:nth-child(even){
+float:right;
 }
 
 #home #top-main-menu ul.clearfix li a{
@@ -244,6 +267,8 @@ text-align:center;
 /* ■■■横幅800px以下ここまで■■■ */
 
 
+
+
 /* ■■■横幅600px以下ここから■■■ */
 @media (max-width:600px)
 {
@@ -331,15 +356,16 @@ margin-left:0;
 #home #top-main-menu ul.clearfix li{
 width:auto;
 display:block;
+/*
 border-width:0;
 border-radius:5px;
+*/
 position:static;
 margin:0 0 10px;
-background-image: -moz-linear-gradient(top, #000000, #666666);
-background-image: -ms-linear-gradient(top, #000000, #666666);
-background-image: -o-linear-gradient(top, #000000, #666666);
-background-image: -webkit-linear-gradient(top, #000000, #666666);
-background-image: linear-gradient(top, #000000, #666666);
+}
+
+#home #top-main-menu ul.clearfix li:nth-child(odd),#home #top-main-menu ul.clearfix li:nth-child(even){
+float:none;
 }
 
 #home #top-main-menu ul.clearfix li a{
@@ -351,6 +377,14 @@ text-align:left;
 position:static;
 background-color:transparent;
 padding:2px 8px;
+
+border-width:0;
+border-radius:5px;
+background-image: -moz-linear-gradient(top, #000000, #666666);
+background-image: -ms-linear-gradient(top, #000000, #666666);
+background-image: -o-linear-gradient(top, #000000, #666666);
+background-image: -webkit-linear-gradient(top, #000000, #666666);
+background-image: linear-gradient(top, #000000, #666666);
 }
 
 #home #top-main-menu ul.clearfix li a span{
