@@ -1,8 +1,5 @@
 mt-theme-heartbeat-info
 =======================
-現在、細かいところを調整中。  
-日々、アップデート中。  
-
 Heartbeat.info Theme for Movable Type  
 
 MovableType／ムーバブルタイプのテーマです。  
@@ -10,6 +7,7 @@ MovableType／ムーバブルタイプのテーマです。
 http://www.heartbeat.info  
 
 完全無償でご利用いただけますが、フッター部分のクレジットを消さないでご利用ください。  
+システムカスタムフィールドを使っているので、Webサイト用のテーマを適用するとシステム内のすべてのブログにカスタムフィールドが追加されます。  
 
 設定マニュアル  
 http://www.slideshare.net/applebeat/heartbeat-info-33137265  
