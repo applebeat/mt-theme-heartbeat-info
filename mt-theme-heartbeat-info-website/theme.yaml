@@ -8,6 +8,7 @@ elements:
     component: ~
     data: 
       - lightbox
+      - images
     importer: blog_static_files
   default_folders: 
     component: ~
