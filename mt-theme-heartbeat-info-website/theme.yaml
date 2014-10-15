@@ -1,0 +1,441 @@
+--- 
+author_link: http://www.drivemenuts.com/
+author_name: Yasuhiro Takahashi
+class: website
+description: ウェブサイト用のテーマです。ウェブサイト配下に作成するブログには、旅行記なら「Heartbeat.info 旅行記ブログ」、旅行記ではないブログには「Heartbeat.info ノーマルブログ」をテーマとしてお使いください。
+elements: 
+  blog_static_files: 
+    component: ~
+    data: 
+      - images
+      - lightbox
+    importer: blog_static_files
+  default_folders: 
+    component: ~
+    data: 
+      about: 
+        label: サイト概要
+      contact: 
+        label: お問い合わせ
+    importer: default_folders
+  system_custom_fields: 
+    component: commercial
+    data: 
+      advthrzn01: 
+        default: ''
+        description: 横長の広告を表示させる場合に使ってください。最大幅580ピクセルまで。
+        name: 広告（メインコンテンツ用）01
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataAdvthrzn01
+        type: textarea
+      advthrzn02: 
+        default: ''
+        description: 横長の広告を表示させる場合に使ってください。最大幅580ピクセルまで。
+        name: 広告（メインコンテンツ用）02
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataAdvthrzn02
+        type: textarea
+      advtvrtc01: 
+        default: ''
+        description: 縦長の広告を表示させる場合に使ってください。最大幅390ピクセルまで。
+        name: 広告（右サイドバー用）01
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataAdvtvrtc01
+        type: textarea
+      advtvrtc02: 
+        default: ''
+        description: 縦長の広告を表示させる場合に使ってください。最大幅390ピクセルまで。
+        name: 広告（右サイドバー用）02
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataAdvtvrtc02
+        type: textarea
+      allmovie: 
+        default: ''
+        description: 旅行のムービーを登録します。ここに登録した動画はカテゴリーアーカイブ、記事アーカイブのページに表示されます。右サイドバーに表示させる場合は、横幅は390ピクセル以下にしてください。
+        name: 旅行の動画（すべて）
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: BlogDataAllmovie
+        type: textarea
+      blogusercss: 
+        default: "/* こちらに書いたスタイルシートは「http://ブログURL/css/blogusercss.css」に書き出されます。 */\r\n/* こちらに書いたスタイルは当該ブログのみに適用されます。 */"
+        description: ブログごとにスタイルを設定したい場合はこちらにスタイルを設定してください。
+        name: ブログユーザースタイルシート
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: BlogDataBlogusercss
+        type: textarea
+      facebooklinkurl: 
+        default: ''
+        description: FacebookページのURLを登録してください。
+        name: Facebook Link URL
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataFacebooklinkurl
+        type: url
+      facebookwidget: 
+        default: ''
+        description: Facebookウィジェットのリンクの設定
+        name: Facebook Widget
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataFacebookwidget
+        type: textarea
+      freespaceblog01: 
+        default: ''
+        description: "ブログ内に表示させたい内容。WidgetSetに設定します。\r\n例：ブログの説明、ブログ内に表示させたい広告など"
+        name: フリースペースブログ01
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: BlogDataFreespaceblog01
+        type: textarea
+      freespaceblog02: 
+        default: ''
+        description: "ブログ内に表示させたい内容。WidgetSetに設定します。\r\n例：ブログの説明、ブログ内に表示させたい広告など"
+        name: フリースペースブログ02
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: BlogDataFreespaceblog02
+        type: textarea
+      freespaceblog03: 
+        default: ''
+        description: "ブログ内に表示させたい内容。WidgetSetに設定します。\r\n例：ブログの説明、ブログ内に表示させたい広告など"
+        name: フリースペースブログ03
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: BlogDataFreespaceblog03
+        type: textarea
+      freespacewebsite01: 
+        default: ''
+        description: "ウェブサイト内のブログに表示させたい内容。WidgetSetに設定します。\r\n例：プロフィール、ウェブサイト内に表示させたい広告など"
+        name: フリースペースウェブサイト01
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataFreespacewebsite01
+        type: textarea
+      freespacewebsite02: 
+        default: ''
+        description: "ウェブサイト内のブログに表示させたい内容。WidgetSetに設定します。\r\n例：プロフィール、ウェブサイト内に表示させたい広告など"
+        name: フリースペースウェブサイト02
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataFreespacewebsite02
+        type: textarea
+      freespacewebsite03: 
+        default: ''
+        description: "ウェブサイト内のブログに表示させたい内容。WidgetSetに設定します。\r\n例：プロフィール、ウェブサイト内に表示させたい広告など"
+        name: フリースペースウェブサイト03
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataFreespacewebsite03
+        type: textarea
+      googleanalytics: 
+        default: ''
+        description: グーグル・アナリティクスのスクリプトをhead要素に追加出来ます。
+        name: Google Analytics
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataGoogleanalytics
+        type: textarea
+      headerimage: 
+        default: ''
+        description: ヘッダーの背景画像を設定します。
+        name: ヘッダーの背景画像
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: BlogDataHeaderimage
+        type: url
+      headerpixcaption: 
+        default: ''
+        description: ヘッダー画像のキャプションです。ヘッダーの右下に表示されます。
+        name: ヘッダー画像のキャプション
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataHeaderpixcaption
+        type: text
+      prologue: 
+        default: ''
+        description: 旅行の概要や前置きなどが必要な場合に入力してください。
+        name: プロローグ
+        obj_type: blog
+        options: ~
+        required: 0
+        tag: BlogDataPrologue
+        type: textarea
+      travelblog: 
+        default: 旅行記である
+        description: 旅行記のブログかそうではないかの区別。
+        name: 旅行記ですか？
+        obj_type: blog
+        options: 旅行記である,旅行記ではない,準備中
+        required: 1
+        tag: BlogDataTravelblog
+        type: radio
+      twitterlinkurl: 
+        default: ''
+        description: TwitterのURLを設定してください。
+        name: Twitter Link URL
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataTwitterlinkurl
+        type: url
+      twitterwidget: 
+        default: ''
+        description: Twitterウィジェットの設定
+        name: Twitter Widget
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataTwitterwidget
+        type: textarea
+      websiteheaderimg: 
+        default: ''
+        description: ウェブサイトのトップページのヘッダー背景画像を設定します
+        name: ヘッダーの背景画像（ウェブサイト用）
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataWebsiteheaderimg
+        type: url
+      websiteprologue: 
+        default: ''
+        description: ウェブサイトの説明。前置き、プロローグなど...。
+        name: プロローグ（ウェブサイト用）
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataWebsiteprologue
+        type: textarea
+      websiteusercss: 
+        default: "/* ウェブサイトのみに適用させたい時は、セレクタに「body.websitecss」を含めてください。 */\r\n/* こちらに書いたスタイルシートは「http://www.heartbeat.info/css/websiteusercss.css」に書き出されます。 */"
+        description: ウェブサイトに適用するスタイルシートを書くことができます。こちらに書いたスタイルはウェブサイト内のすべてのブログに影響しますが、セレクタに「body.websitecss」を含めることでブログには適用されないスタイルを書くことができます。
+        name: ウェブサイトユーザースタイルシート
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataWebsiteusercss
+        type: textarea
+      whatsnew: 
+        default: 新着情報に含める
+        description: トップページの新着情報欄に含めるか、含めないか
+        name: 新着情報欄に含める？
+        obj_type: blog
+        options: 新着情報に含める,新着情報に含めない
+        required: 1
+        tag: BlogDataWhatsnew
+        type: radio
+      zenback: 
+        default: ''
+        description: Zenbackからコードを取得してこちらに設定してください。
+        name: Zenback
+        obj_type: website
+        options: ~
+        required: 0
+        tag: WebsiteDataZenback
+        type: textarea
+    importer: system_custom_fields
+  template_set: 
+    component: ~
+    data: 
+      base_path: templates
+      label: exported_template set
+      templates: 
+        index: 
+          feed_recent: 
+            label: 最新記事のフィード
+            outfile: atom.xml
+            rebuild_me: 1
+          javascript: 
+            label: jQuery オリジナル
+            outfile: js/original_jquery.js
+            rebuild_me: 1
+          main_index: 
+            label: メインページ
+            outfile: index.html
+            rebuild_me: 1
+          rsd: 
+            label: RSD
+            outfile: rsd.xml
+            rebuild_me: 1
+          styles: 
+            label: オリジナルスタイルシート
+            outfile: css/original_style_sheet.css
+            rebuild_me: 1
+          template_320: 
+            label: サイトマップインデックス XMLファイル
+            outfile: sitemapindex.xml
+            rebuild_me: 1
+          template_3441: 
+            label: タブレット用スタイルシート
+            outfile: css/css_for_tablet.css
+            rebuild_me: 1
+          template_4101: 
+            label: robots.txtファイル
+            outfile: robots.txt
+            rebuild_me: 1
+          template_6151: 
+            label: ブログ用スタイルシート
+            outfile: css/blog_style_sheet.css
+            rebuild_me: 1
+          template_8120: 
+            label: サイトマップ XMLファイル
+            outfile: sitemap.xml
+            rebuild_me: 1
+          template_8519: 
+            label: ウェブサイトユーザースタイルシート
+            outfile: css/websiteusercss.css
+            rebuild_me: 1
+          template_9559: 
+            label: Webサイト用カスタム タイル for IE11
+            outfile: browserconfig.xml
+            rebuild_me: 1
+        module: 
+          comment_detail: 
+            label: コメント詳細
+          comment_form: 
+            label: コメント入力フォーム
+          comments: 
+            label: コメント
+          entry_metadata: 
+            label: ブログ記事のメタデータ
+          entry_summary: 
+            label: ブログ記事の概要
+          header: 
+            label: ヘッダー
+          navigation: 
+            label: ナビゲーション
+          page_detail: 
+            label: ウェブページの詳細
+          search: 
+            label: 検索
+          sidebar: 
+            label: サイドバー
+          signin: 
+            label: サインイン
+          tags: 
+            label: タグ
+          template_3130: 
+            label: Open Graph Protocol for WebSite
+          template_3300: 
+            label: フッター
+          template_3440: 
+            label: Viewportの設定
+          template_5108: 
+            label: HTMLヘッダー
+          template_9558: 
+            label: touch-icon
+          trackbacks: 
+            label: トラックバック
+        page: 
+          page: 
+            label: ウェブページ
+            mappings: 
+              page: 
+                archive_type: Page
+                file_template: "%-c/%-f"
+                preferred: 1
+        system: 
+          comment_listing: 
+            label: コメント一覧
+          comment_preview: 
+            label: コメントプレビュー
+          comment_response: 
+            label: コメント完了
+          dynamic_error: 
+            label: ダイナミックパブリッシングエラー
+          popup_image: 
+            label: ポップアップ画像
+          search_results: 
+            label: 検索結果
+        widget: 
+          blogs: 
+            label: ブログ一覧[旅行記以外]
+          openid: 
+            label: Twitter（ウェブサイト）
+          pages_list: 
+            label: ウェブページ一覧
+          recent_entries_expanded: 
+            label: 新着情報
+          syndication: 
+            label: 購読
+          tag_cloud: 
+            label: タグクラウド
+          template_3298: 
+            label: サイト内検索
+          template_3299: 
+            label: 旅行記一覧
+          template_4297: 
+            label: フリースペースウェブサイト01
+          template_4298: 
+            label: フリースペースウェブサイト02
+          template_4299: 
+            label: フリースペースウェブサイト03
+          template_4300: 
+            label: 広告（右サイドバー用）01
+          template_4301: 
+            label: 広告（右サイドバー用）02
+          template_4302: 
+            label: 広告（メインコンテンツ用）01
+          template_4303: 
+            label: 広告（メインコンテンツ用）02
+          template_476: 
+            label: Facebook（ウェブサイト）
+        widgetset: 
+          blog_activity: 
+            label: 検索結果・タグクラウド検索結果ページ
+            order: 1000
+            widgets: 
+              - サイト内検索
+              - 新着情報
+              - 広告（右サイドバー用）01
+              - 広告（右サイドバー用）02
+              - タグクラウド
+              - フリースペースウェブサイト01
+              - 購読
+          main_sidebar: 
+            label: メインコンテンツ（ウェブサイト）
+            order: 1000
+            widgets: 
+              - 旅行記一覧
+              - 新着情報
+              - Facebook（ウェブサイト）
+              - Twitter（ウェブサイト）
+          template_477: 
+            label: 右サイドバー（ウェブサイト）
+            order: 1000
+            widgets: 
+              - ブログ一覧[旅行記以外]
+              - ウェブページ一覧
+              - フリースペースウェブサイト01
+              - 広告（右サイドバー用）01
+              - 広告（右サイドバー用）02
+              - タグクラウド
+              - 購読
+              - 旅行記一覧
+    importer: template_set
+id: mt-theme-heartbeat-info-website
+label: Heartbeat.info ウェブサイト
+name: Heartbeat.info ウェブサイト
+version: 1.2.0

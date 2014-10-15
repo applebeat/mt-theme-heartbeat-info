@@ -1,0 +1,75 @@
+<$MTInclude module="ヘッダー"$>
+
+<body id="category" name="catid<$MTCategoryID$>" class="blog<mt:BlogID>">
+<div id="container">
+
+<MTInclude module="HTMLヘッダー">
+
+<div id="content">
+
+<div id="content-title">
+<h2><$MTArchiveTitle$></h2>
+<mt:If tag="CategoryDataCategorysubtitle"><h3><mt:CategoryDataCategorysubtitle></h3></mt:If>
+<div id="description"><$MTCategoryDescription$></div>
+</div><!-- /content-title -->
+
+<div id="category-content">
+
+<div id="main-content" class="main-content">
+<div class="action">
+
+<MTEntries>
+<mt:SetVarBlock name="entryimage"><MTEntryAssets lastn="1"><mt:AssetThumbnailURL width="180"></MTEntryAssets></mt:SetVarBlock>
+<dl>
+<dt>
+<a href="<$MTEntryPermalink$>" title="<$MTEntryTitle$>"><$MTEntryTitle$><br /><span class="date"><$MTEntryDate format="%Y/%m/%d %p%l:%M"$></span></a>
+</dt>
+
+<dd>
+<a href="<$MTEntryPermalink$>" title="<$MTEntryTitle$>">
+
+<mt:If name="entryimage">
+<div class="thumb">
+<img src="<mt:GetVar name="entryimage">" alt="アイテム画像" width="180" />
+</div><!-- /thumb -->
+</mt:If>
+
+<div class="right-of-img">
+<div class="entrydescription">
+<$MTEntryBody words="80"$>...&nbsp;
+<span class="readmore">続きを読む&raquo;</span>
+</div>
+</div><!-- /right-of-img -->
+</a>
+</dd>
+</dl>
+</MTEntries>
+
+</div><!-- /action -->
+
+<$mt:Widgetset name="ブログ記事一覧のメイン部分01"$>
+
+</div><!-- /main-content -->
+
+<div id="sub-content" class="sub-content">
+
+<$mt:WidgetSet name="ブログ記事一覧の右サイドバー"$>
+
+</div><!-- /sub-content -->
+
+<$mt:Widgetset name="ブログ記事一覧のメイン部分02"$>
+
+</div><!-- /category-content -->
+
+<div class="to-top">
+<a href="#container">↑このページのトップへ</a>
+</div><!-- /to-top -->
+
+</div><!-- /content -->
+
+<$mt:Include module="フッター"$>
+
+</div><!-- /container -->
+
+</body>
+</html>

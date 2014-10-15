@@ -1,0 +1,14 @@
+<mt:SetVarBlock name="includewhatsnew"><mt:Blogs><mt:SetVarBlock name="whatsnew"><mt:If tag="BlogDataWhatsnew"><mt:BlogDataWhatsnew></mt:If></mt:SetVarBlock><mt:If name="whatsnew" eq="新着情報に含める"><$mt:BlogID$>,</mt:If></mt:Blogs></mt:SetVarBlock>
+
+<mt:MultiBlog mode="context" blog_ids="$includewhatsnew">
+<mt:Entries lastn="20">
+<mt:EntriesHeader>
+<div class="whatsnew widget">
+<h3>What's New!│新着情報</h3>
+<div class="whatsnewlist">
+<ul class="listimg">
+</mt:EntriesHeader>
+<li><a class="block" href="<mt:EntryPermalink />"><mt:EntryTitle /><span class="subtitle"><$mt:BlogName$>：<$mt:EntryDate format="%Y/%m/%d %H:%M"$></span></a></li>
+<mt:EntriesFooter></ul></div></div></mt:EntriesFooter>
+</mt:Entries>
+</mt:MultiBlog>

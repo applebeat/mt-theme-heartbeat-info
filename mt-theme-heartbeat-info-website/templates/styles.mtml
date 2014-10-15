@@ -1,0 +1,651 @@
+@charset "utf-8";
+<mt:Ignore>
+/* ■■■全体のスタイルここから■■■ */
+/* ■■■コメント／トラックバック／お問い合わせのスタイルここから■■■ */
+/* ■■■コメントプレビューのスタイルここから■■■ */
+/* ■■■フッターここから■■■ */
+/* ■■■右サイドバーのスタイルここから■■■ */
+/* ■■■トップページのスタイルここから■■■ */
+</mt:Ignore>
+
+li#blogid4{
+display:none;
+}
+
+/* ■■■全体のスタイルここから■■■ */
+*{
+font-family:sans-serif;
+color:#666666;
+}
+
+body{
+text-align:center;
+margin:0;
+padding:0;
+background-color:#eeeeee;
+}
+
+div#container{
+width:1000px;
+text-align:left;
+margin:0 auto;
+padding:0;
+box-shadow:5px 0 5px #cccccc,-5px 0 5px #cccccc;
+background-color:#ffffff;
+}
+
+h1,h2,h3{
+margin:0;
+padding:0;
+}
+
+p{
+margin:0 0 10px;
+}
+
+img{
+border:none;
+}
+
+#header{
+color:#ffffff;
+background: #000000 url(<mt:If tag="WebsiteDataWebsiteheaderimg"><mt:WebsiteDataWebsiteheaderimg><mt:Else><mt:WebSiteURL>images/header_background_sample.jpg</mt:If>) center center no-repeat;
+background-size:cover;
+}
+
+#website-header-content{
+height:300px;
+position:relative;
+background-image: -moz-linear-gradient(bottom, #000000, transparent 20px);
+background-image: -ms-linear-gradient(bottom, #000000, transparent 20px);
+background-image: -o-linear-gradient(bottom, #000000, transparent 20px);
+background-image: -webkit-linear-gradient(bottom, #000000, transparent 20px);
+background-image: linear-gradient(bottom, #000000, transparent 20px);
+
+-moz-text-shadow:1px 1px 3px #000000,-1px -1px 3px #000000,1px -1px 3px #000000,-1px 1px 3px #000000;
+-webkit-text-shadow:1px 1px 3px #000000,-1px -1px 3px #000000,1px -1px 3px #000000,-1px 1px 3px #000000;
+text-shadow:1px 1px 3px #000000,-1px -1px 3px #000000,1px -1px 3px #000000,-1px 1px 3px #000000;
+}
+
+#header #website-header-content #website-title{
+padding-top:30px;
+display:inline-block;
+}
+
+#header #website-header-content h1{
+font-size:200%;
+margin:0;
+}
+
+#header #website-header-content h2{
+font-size:150%;
+margin:0;
+}
+
+#header #website-header-content h1 a{
+padding:0 30px;
+display:block;
+}
+
+#header #website-header-content h2 a{
+padding:0 30px;
+display:block;
+}
+
+#header a{
+color: #ffffff;
+text-decoration: none;
+}
+
+#header #website-header-content #website-title:hover{
+font-style:italic;
+}
+
+div#header div.header-pix-caption{
+position: absolute;
+right: 5px;
+bottom: 5px;
+color: #ffffff;
+font-weight: bold;
+}
+
+/* コンテンツのスタイルここから */
+#content{
+padding:10px;
+background-color:#ffffff;
+}
+
+#content #websiteprologue{
+margin:15px 3% 30px;
+padding:20px;
+box-shadow:0 5px 5px #999999,0 -1px 1px #eeeeee;
+background-color:#f5f5f5;
+font-size:110%;
+font-style:italic;
+}
+
+#content #main-content{
+width:590px;
+float:left;
+}
+
+#content #sub-content{
+float: right;
+width: 380px;
+}
+
+/* 検索フォームのスタイルここから */
+div.search{
+text-align:center;
+overflow:hidden;
+}
+
+.search form{
+display:inline-block;
+padding:0;
+margin:0;
+}
+
+.search form input#search{
+width:270px;
+}
+
+.search form input#submit{
+font-weight:bold;
+cursor:pointer;
+}
+/* 検索フォームのスタイルここまで */
+
+/* 検索結果ページのスタイルここから */
+.searchresultcontent h1.search-results-header{
+font-size:130%;
+margin-bottom:15px;
+}
+
+.searchresultcontent h2{
+font-size:115%;
+}
+
+.searchresultcontent div.search-results-container div.asset-header:hover{
+background-color:#dddddd;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}
+
+.searchresultcontent div.search-results-container div.asset-header a{
+display:block;
+text-decoration:none;
+pading:5px;
+}
+
+.searchresultcontent div.search-results-container div.asset-header .permalink a{
+font-size:90%;
+color:#328332;
+text-decoration:none;
+}
+
+.searchresultcontent div.entry-asset{
+padding:5px;
+margin-bottom:10px;
+border-bottom:1px dashed #666666;
+}
+
+.searchresultcontent h2.asset-name{
+font-size:110%;
+}
+
+.searchresultcontent h2.asset-name a span{
+font-size:80%;
+white-space:nowrap;
+font-weight:normal;
+}
+
+.searchresultcontent div.asset-header,div.asset-content{
+padding:5px;
+}
+
+.searchresultcontent div.asset-footer{
+padding:3px 5px;
+}
+
+.searchresultcontent .byline{
+display:block;
+text-align:right;
+}
+/* 検索結果ページのスタイルここまで */
+
+#content .ad{
+clear:both;
+text-align:center;
+margin:10px 0;
+background-color: #ffffff;
+}
+
+#content .widget{
+border:1px solid #999999;
+border-radius:5px;
+background-color:#ffffff;
+padding:3px;
+margin-bottom:10px;
+}
+
+#content .widget p{
+margin:0 5px;
+}
+
+#content .widgetpart{
+margin-bottom:10px;
+}
+
+#content .widget h3{
+border-bottom:1px dashed #bbbbbb;
+margin-bottom:7px;
+}
+
+div.widget-syndication ul{
+list-style-type:none;
+padding:0 5px;
+}
+
+/* 旅行記一覧のスタイル（メインコンテンツ） */
+#content .travels ul{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+
+#content .travels ul li{
+padding:0;
+margin:4px;
+background-color:#ffffff;
+background-repeat:no-repeat;
+}
+
+#content #main-content .travels ul li{
+width:44%;
+display:inline-block;
+box-shadow:2px 2px 2px #bbbbbb,-1px -1px 1px #bbbbbb;
+border:11px solid #f8f8f8;
+border-bottom-width:3px;
+background-position:center center;
+background-size:100%;
+}
+
+#content #main-content .travels ul li a:hover{
+background-size:100%;
+}
+
+#content #main-content .travels ul li a{
+/*width:250px;*/
+height:250px;
+display:block;
+position:relative;
+padding:0;
+}
+
+#content #main-content .travels ul li a:hover{
+background-image:inherit;
+background-position:inherit;
+}
+
+#content #main-content .travels ul li a div.travel-caption{
+width:100%;
+padding-top:3px;
+background-color:#fafafa;
+position:absolute;
+left:0;
+bottom:0;
+}
+
+#content #main-content .travels ul li a div.travel-caption span{
+display:block;
+}
+
+#content #main-content .travels ul li a div.travel-caption span.travelperiod{
+font-size:90%;
+}
+
+/* to-topのスタイル */
+.to-top{
+clear:both;
+margin:10px 0;
+}
+
+.to-top a{
+display:block;
+text-align:right;
+}
+
+.to-top a:hover{
+background-color:#dddddd;
+text-align:center;
+border:none;
+}
+
+/* class=widgetのスタイルここから */
+.widget ul{
+padding:0 5px 0 25px;
+margin:0;
+}
+
+ul.listimg{
+list-style-type:none;
+}
+
+<mt:WebSites><mt:Assets tag="@listimg"><mt:SetVar name="lsi" value="1"></mt:Assets></mt:WebSites>
+ul.listimg li{
+list-style-image:url(<mt:If name="lsi"><mt:WebSites><mt:Assets tag="@listimg"><mt:AssetThumbnailURL width="17" squaer="1"></mt:Assets></mt:WebSites><mt:Else><mt:WebSiteURL>images/listimg.png</mt:If>) ;
+margin:5px;
+}
+
+.widget ul.pagelist{
+padding-left:5px;
+}
+
+.widget ul.listimg li.folder{
+list-style-image:none;
+}
+
+.widget ul li.rank-1{
+font-size:150%;
+}
+
+.widget ul li.rank-2{
+font-size:140%;
+}
+
+.widget ul li.rank-3{
+font-size:130%;
+}
+
+.widget ul li.rank-4{
+font-size:120%;
+}
+
+.widget ul li.rank-5{
+font-size:110%;
+}
+
+.widget ul li.rank-6{
+font-size:100%;
+}
+
+.widget ul li a{
+display:block;
+text-decoration:none;
+padding:2px 0;
+border-radius:5px;
+}
+
+.widget ul li a.inline{
+display:inline;
+}
+
+.widget ul li a:hover{
+background-color:#dddddd;
+}
+
+.widget span.subtitle{
+display:block;
+font-size:90%;
+}
+
+.widget span.subtitle:before{
+content:"[";
+}
+
+.widget span.subtitle:after{
+content:"]";
+}
+
+div.whatsnewlist ul{
+height:180px;
+overflow:auto;
+}
+
+<mt:WebSites><mt:Assets tag="@blank_window_link"><mt:SetVar name="bwl" value="1"></mt:Assets></mt:WebSites>
+a.targetblank::after{
+content:' ' url(<mt:If name="bwl"><mt:WebSites><mt:Assets tag="@blank_window_link"><mt:AssetThumbnailURL width="17" squaer="1"></mt:Assets></mt:WebSites><mt:Else><mt:WebSiteURL>images/blank_window_link.gif</mt:If>);
+}
+
+#entry-title{
+border:1px solid #000000;
+border-left:15px solid #000000;
+padding-left:10px;
+margin-bottom:15px;
+border-radius:7px;
+}
+
+/* ■■■右サイドバーのスタイルここから■■■ */
+#sub-content ul{
+}
+
+#sub-content ul li a{
+text-decoration:none;
+padding:2px;
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+}
+
+#sub-content ul li a.block{
+display:block;
+}
+
+#sub-content ul li a:hover{
+background-color:#dddddd;
+}
+
+/* 旅行記一覧のスタイル（右サイドバー）ここから */
+#content #sub-content .travels ul li{
+background-size:50px 50px;
+background-position:left center;
+background-color:tarnsparent;
+overflow:hidden;
+padding:0;
+margin:2px;
+border:3px solid #ffffff;
+}
+
+#content #sub-content .travels ul li:hover{
+background-size:50px 50px !important;
+background-position:left center;
+background-color:tarnsparent;
+border:3px solid #dddddd;
+border-radius:5px;
+}
+
+#content #sub-content .travels ul li a{
+display:block;
+padding:0;
+}
+
+#content #sub-content .travels ul li a:hover{
+background-color:transparent;
+}
+
+#content #sub-content .travels ul li a div.travel-caption{
+width:320px;
+background-color:#ffffff;
+margin-left:55px;
+}
+/* 旅行記一覧のスタイル（右サイドバー）ここまで */
+/* ■■■右サイドバーのスタイルここまで■■■ */
+
+/* タグクラウドここから */
+div.tagcloud ul{
+list-style-image:none;
+padding:2px;
+}
+
+div.tagcloud ul li{
+display:inline;
+padding:3px;
+margin:2px;
+}
+
+div.tagcloud ul li a{
+display:inline;
+}
+/* タグクラウドここまで */
+
+/*facebookのスタイルここから*/
+div.facebook .facebookwidget iframe{
+width:100% !important;
+}
+
+div.fbwl div.facebooklinkurl{
+display:none;
+}
+
+div.facebooklinkurl a{
+color:#ffffff;
+display:block;
+padding:7px;
+border-radius:5px;
+background-color:#3b5998;
+text-align:center;
+text-decoration:none;
+font-weight:bold;
+}
+/*facebookのスタイルここまで*/
+
+/*twitterのスタイルここから*/
+div.twitter .twitterwidget iframe{
+width:100% !important;
+}
+
+div.twwl div.twitterlinkurl{
+display:none;
+}
+
+div.twitterlinkurl a{
+color:#ffffff;
+display:block;
+padding:7px;
+border-radius:5px;
+background-color:#55acee;
+text-align:center;
+text-decoration:none;
+font-weight:bold;
+}
+/*twitterのスタイルここまで*/
+
+/* ■■■全体のスタイルここまで■■■ */
+
+/* ■■■コメント／トラックバック／お問い合わせのスタイルここから■■■ */
+#content .comment-ping{
+clear: both;
+width:100%;
+margin-bottom:5px;
+}
+
+#content .comment-body, #content .ping-body{
+border: 1px solid #999999;
+border-radius:5px;
+margin-bottom:10px;
+}
+
+#content .comment-body .inner-comment-body{
+margin:10px;
+}
+
+#content .ping-body .inner-ping-body{
+margin:10px;
+}
+
+#content .comment-ping h3{
+background-color:#666666;
+color:#ffffff;
+border-radius:5px;
+padding-left:7px;
+margin-bottom:20px;
+}
+
+.comment-ping form{
+margin-bottom:20px;
+}
+
+#content .comment-body .inner-comment-body .inner{
+margin:0 0 20px;
+padding:0 0 5px;
+border-bottom:1px dashed #999999;
+}
+
+#content .comment-body .inner-comment-body .inner p{
+margin:0;
+}
+
+#content .ping-body .inner-ping-body .inner{
+margin:0 0 20px;
+padding:0 0 5px;
+border-bottom:1px dashed #999999;
+}
+
+#content .ping-body .inner-ping-body .inner div.trackback-header{
+font-weight:bold;
+}
+
+#content .ping-body .inner-ping-body .inner div.trackback-content p:last-child{
+margin-bottom:3px;
+}
+
+.comment-ping input#comment-author,#comment-email,#comment-url,#url{
+width: 90%;
+}
+
+.comment-ping textarea{
+width: 90%;
+}
+
+.comment-ping hr{
+visibility: visible;
+}
+/* ■■■コメント／トラックバック／お問い合わせのスタイルここまで■■■ */
+
+/* ■■■コメントプレビューのスタイルここから■■■ */
+.comment-inner{
+padding:20px 50px;
+}
+
+#comment ul{
+list-style-type:none;
+}
+
+#comment div#comments-open-data div{
+margin-bottom:20px;
+}
+/* ■■■コメントプレビューのスタイルここまで■■■ */
+
+/* ■■■フッターここから■■■ */
+#footer{
+clear:both;
+padding:15px 0;
+color:#ffffff;
+background-color: #000000;
+text-align: center;
+}
+
+#footer ul{
+padding:0;
+list-style-type:none;
+}
+
+#footer li{
+display: inline;
+}
+
+#footer li:first-child::before{
+content: ' │ ';
+}
+
+#footer li::after{
+content: ' │ ';
+}
+
+#footer a{
+color: #ffffff;
+text-decoration: none;
+}
+/* ■■■フッターここまで■■■ */

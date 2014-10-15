@@ -1,0 +1,33 @@
+<$mt:Include module="ヘッダー" body_class="mt-main-index"$>
+<body class="website<mt:WebSiteID> websitecss">
+<div id="container">
+
+<mt:Include module="HTMLヘッダー">
+
+<div id="content">
+
+<mt:If tag="WebsiteDataWebsiteprologue">
+<div id="websiteprologue">
+<mt:WebsiteDataWebsiteprologue>
+</div>
+</mt:If>
+
+<div id="main-content">
+
+<mt:WidgetSet name="メインコンテンツ（ウェブサイト）">
+
+</div><!-- /main-content -->
+
+<div id="sub-content">
+<$mt:Include widget="サイト内検索"$>
+<$mt:WidgetSet name="右サイドバー（ウェブサイト）"$>
+</div><!-- /sub-content -->
+
+</div><!-- content -->
+ 
+<$mt:Include module="フッター"$>
+
+</div><!-- container -->
+
+</body>
+</html>

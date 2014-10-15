@@ -1,0 +1,88 @@
+<$MTInclude module="ヘッダー"$>
+
+<body id="home" class="blogcss blog<mt:BlogID>">
+<div id="container">
+
+<MTInclude module="HTMLヘッダー">
+
+<div id="content">
+
+<$MTInclude widget="ブログ内検索"$>
+
+<mt:If tag="BlogDataPrologue">
+<div id="prologue"><div>
+<mt:BlogDataPrologue>
+</div></div>
+</mt:If>
+
+<div id="top-main-menu">
+<MTSubCategories top="1" sort_by="user_custom" sort_order="descend">
+<mt:SubCatIsFirst>
+<ul class="clearfix">
+</mt:SubCatIsFirst>
+<li id="cat-<MTCategoryID>" title="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
+<mt:If tag="CategoryDataCategorymainimg">
+<a href="<$MTCategoryArchiveLink$>" title="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
+<span class="catimg">
+<img src="<mt:CategoryDataCategorymainimgAsset><mt:AssetThumbnailURL width="350" square="1"></mt:CategoryDataCategorymainimgAsset>" alt="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
+</span>
+<span class="catname">
+<span class="catlabel"><$MTCategoryLabel$></span>
+<mt:If tag="CategoryDataCategorysubtitle"><span class="subtitle"><mt:CategoryDataCategorysubtitle></span></mt:If>
+</span>
+</a>
+
+<mt:else>
+<a href="<$MTCategoryArchiveLink$>" title="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
+<span class="catimg">
+
+<img src="" alt="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
+
+<mt:Entries lastn="1">
+<mt:EntryAssets lastn="1">
+<mt:AssetThumbnailURL width="350" square="1">
+</mt:EntryAssets>
+</mt:Entries>
+
+<mt:Ignore>
+<img <mt:Entries lastn="1"><mt:EntryAssets lastn="1">src="<mt:AssetThumbnailURL width="350" square="1">"</mt:EntryAssets></mt:Entries> alt="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
+</mt:Ignore>
+</span>
+<span class="catname">
+<span class="catlabel"><$MTCategoryLabel$></span>
+<mt:If tag="CategoryDataCategorysubtitle"><span class="subtitle"><mt:CategoryDataCategorysubtitle></span></mt:If>
+</span>
+</a>
+</mt:else>
+</mt:If>
+</li>
+<mt:SubCatIsLast>
+</ul>
+</mt:SubCatIsLast>
+</MTSubCategories>
+</div><!-- /top-main-menu -->
+
+<div class="to-top">
+<a href="#container">↑このページのトップへ</a>
+</div><!-- /to-top -->
+
+<div id="widgetset01" class="top-block">
+<$MTWidgetSet name="ブログのトップページ01"$>
+</div>
+
+<div id="widgetset02" class="top-block">
+<$MTWidgetSet name="ブログのトップページ02"$>
+</div>
+
+<div class="to-top">
+<a href="#container">↑このページのトップへ</a>
+</div><!-- /to-top -->
+
+</div><!-- /content -->
+
+<$MTInclude module="フッター"$>
+
+</div><!-- /container -->
+
+</body>
+</html>

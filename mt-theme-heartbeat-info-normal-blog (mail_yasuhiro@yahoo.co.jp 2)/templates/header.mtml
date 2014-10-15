@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<$MTPublishCharset$>" />
+<script type="text/javascript" src="<$mt:Link template="javascript"$>"></script>
+
+<mt:If name="entry_archive">
+<meta name="description" content="<mt:If tag="EntryExcerpt"><$mt:EntryExcerpt remove_html="1" convert_breaks="0"$><mt:Else><$MTEntryBody remove_html="1" words="100" convert_breaks="0" strip_linefeeds="1"$></mt:If>" />
+<meta name="keywords" content="<$MTBlogName$>,<mt:EntryCategories glue=","><mt:CategoryLabel></mt:EntryCategories>,<mt:EntryTags glue=","><mt:TagLabel></mt:EntryTags><mt:If tag="EntryKeywords">,<mt:EntryKeywords></mt:If>" />
+
+<mt:Elseif name="category-archive">
+<meta name="description" content="<mt:If tag="CategoryDescription"><$MTCategoryDescription remove_html="1" convert_breaks="0" strip_linefeeds="1"$><mt:Else><$MTBlogDescription remove_html="1" convert_breaks="0" strip_linefeeds="1"$></mt:If>" />
+<meta name="keywords" content="<$MTBlogName$>,<mt:Categories glue=","><$mt:CategoryLabel$></mt:Categories>,<mt:Entries><mt:Tags glue=","><mt:TagLabel></mt:Tags></mt:Entries>" />
+
+<mt:Else>
+<meta name="description" content="<$MTBlogDescription remove_html="1" strip_linefeeds="1"$>" />
+<meta name="keywords" content="<$MTBlogName$>,<mt:Categories glue=","><mt:CategoryLabel></mt:Categories>" />
+
+</mt:If>
+
+<mt:Include module="Viewportの設定" parent="1">
+
+<!-- スタイルシートここから -->
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/original_style_sheet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/blog_style_sheet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:BlogURL$>css/blog_style.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/css_for_tablet.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:WebSiteURL$>css/websiteusercss.css" type="text/css" />
+<link rel="stylesheet" href="<$mt:BlogURL$>css/blogusercss.css" type="text/css" />
+<!-- スタイルシートここまで -->
+
+<link rel="alternate" type="application/atom+xml" title="Atom" href="<$MTBlogURL$>atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<$MTBlogURL$>index.xml" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$MTBlogURL$>rsd.xml" />
+   
+<title><MTIfArchiveType archive_type="individual"><$MTArchiveTitle$>：</MTIfArchiveType><MTIfArchiveType archive_type="category"><$MTArchiveTitle$>：</MTIfArchiveType><$MTBlogName encode_html="1"$></title>
+
+<!-- ＊＊＊＊＊jQueryここから＊＊＊＊＊ -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="<$MTWebsiteURL$>js/original_jquery.js"></script>
+<!-- ＊＊＊＊＊jQueryここまで＊＊＊＊＊ -->
+
+<MTIf name="entry_archive">
+
+<!-- ＊＊＊＊＊jQuery.lightboxここから＊＊＊＊＊ -->
+<script type="text/javascript" src="<mt:WebSiteURL>lightbox/js/lightbox-2.6.min.js"></script>
+<link rel="stylesheet" href="<mt:WebSiteURL>lightbox/css/lightbox.css" type="text/css" media="screen" />
+<!-- ＊＊＊＊＊jQuery.lightboxここまで＊＊＊＊＊ -->
+
+<!-- ＊＊＊＊＊jQueryここまで＊＊＊＊＊ -->
+
+<!-- GoogleMapsスクリプトここから -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(<mt:EntryDataGooglemaps>);
+  var mapOptions = {
+    center: myLatlng,
+    zoom: 16
+  };
+  var map = new google.maps.Map(
+      document.getElementById('map'), mapOptions);
+
+  var panoramaOptions = {
+    position: myLatlng,
+    pov: {
+      heading: <mt:EntryDataStreetviewangle>,
+      pitch: 10
+    }
+  };
+  var panorama = new  google.maps.StreetViewPanorama(document.getElementById('viewarea'),panoramaOptions);
+  map.setStreetView(panorama);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+<!-- GoogleMapsスクリプトここまで -->
+
+</MTIf>
+
+<$MTInclude module="Open Graph Protocol"$>
+
+<mt:include module="touch-icon" parent="1">
+
+<mt:If tag="WebsiteDataGoogleanalytics">
+<mt:WebsiteDataGoogleanalytics convert_breaks="0">
+</mt:If>
+</head>

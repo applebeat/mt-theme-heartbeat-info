@@ -1,0 +1,32 @@
+<$mt:Include module="ヘッダー" body_class="mt-main-index"$>
+<body id="page" class="blogcss blog<mt:BlogID>">
+<div id="container">
+
+<div id="header">
+<div id="header-content">
+  <h1 id="website-name"><a href="<$mt:WebsiteURL$>"><$mt:WebsiteName encode_html="1"$></a></h1>
+  <h2 id="website-description"><a href="<$mt:WebsiteURL$>"><$mt:WebsiteDescription$></a></h2>
+  <mt:If tag="WebsiteDataHeaderpixcaption"><div class="header-pix-caption"><mt:WebsiteDataHeaderpixcaption></div></mt:If>
+</div>
+</div>
+
+<div id="content">
+
+<div id="main-content">
+
+<$mt:Include module="ウェブページの詳細"$>
+
+</div><!-- /main-content -->
+
+<div id="sub-content">
+<$mt:WidgetSet name="ブログ記事の右サイドバー"$>
+</div><!-- /sub-content -->
+
+</div><!-- content -->
+ 
+<$mt:Include module="フッター"$>
+
+</div><!-- container -->
+
+</body>
+</html>

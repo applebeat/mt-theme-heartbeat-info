@@ -1,0 +1,18 @@
+<mt:If tag="EntryDataLinkURL">
+<div class="link-list widget">
+<h3>Links│関連サイトリンク集</h3>
+<div class="list">
+<ul class="listimg">
+<mt:EntryDataLinkURL split="\n" setvar="csvline">
+<mt:loop name="csvline">
+<$mt:getvar name="__value__" split="," setvar="csvpart"$>
+<mt:loop name="csvpart">
+<mt:If name="__counter__" eq="1"><$mt:getvar name="__value__" setvar="csv1"$></mt:If>
+<mt:If name="__counter__" eq="2"><$mt:getvar name="__value__" setvar="csv2"$></mt:If>
+</mt:loop>
+<li><a class="targetblank" href="<mt:getvar name="csv1" strip_tags="1">" target="_blank" title="<mt:getvar name="csv2" strip_tags="1">"><mt:getvar name="csv2" strip_tags="1"></a></li>
+</mt:loop>
+</ul>
+</div>
+</div><!-- /link-list -->
+</mt:If>

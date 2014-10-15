@@ -1,0 +1,13 @@
+<mt:WebSites><mt:Assets tag="@feedicon"><mt:SetVar name="feedicon" value="1"></mt:Assets></mt:WebSites>
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><a href="<$mt:Link template="feed_recent"$>"><mt:If name="feedicon"><mt:WebSites><mt:Assets tag="feedicon"><img src="<mt:AssetThumbnailURL width="17" square="1">" alt="購読する" width="<mt:AssetProperty property="image_width">" height="<mt:AssetProperty property="image_height">" /></mt:Assets></mt:WebSites><mt:Else><img src="<$mt:WebsiteURL$>images/feed.png" alt="購読する" width="17" height="17" /></mt:If> ウェブサイトを購読</a></li>
+<mt:If name="search_results">
+    <mt:If tag="SearchString">
+            <li class="search-results-feed"><a href="<$mt:CGIPath$><$mt:SearchScript$>?<mt:IfTagSearch>tag<mt:else>search</mt:IfTagSearch>=<$mt:SearchString encode_url="1"$>&amp;Template=feed&amp;IncludeBlogs=<$mt:SearchIncludeBlogs$>&amp;limit=<$mt:SearchMaxResults$>" title="<mt:IfTagSearch>「<$mt:SearchString$>」の検索結果を購読<mt:Else>タグ「<$mt:SearchString$>」を購読</mt:IfTagSearch>"><mt:If name="feedicon"><mt:WebSites><mt:Assets tag="feedicon"><img src="<mt:AssetThumbnailURL width="17" square="1">" alt="購読する" width="<mt:AssetProperty property="image_width">" height="<mt:AssetProperty property="image_height">" /></mt:Assets></mt:WebSites><mt:Else><img src="<$mt:WebsiteURL$>images/feed.png" alt="購読する" width="17" height="17" /></mt:If> <mt:IfTagSearch>タグ「<$mt:SearchString$>」のフィード<mt:Else>「<$mt:SearchString$>」を検索した結果のフィード</mt:IfTagSearch></a></li>
+    </mt:If>
+</mt:If>
+        </ul>
+    </div>
+</div>

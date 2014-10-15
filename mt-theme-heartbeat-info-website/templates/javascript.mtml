@@ -1,0 +1,25 @@
+$(document).ready(function(){
+var $eleW = $("div.movie iframe").attr("width");
+var $eleH = $("div.movie iframe").attr("height");
+
+var $aspectRatio = ($eleH / $eleW) * 100 + "%";
+
+$("div.movie").css('padding-top',$aspectRatio);
+
+}
+);
+
+/*
+ここから下は作成途中のテスト
+$(function(){
+var $eleW = $("div.movie iframe").width();
+var $eleH = $("div.movie iframe").height();
+
+var $aspectRatio = "'" ($eleH / $eleW) * 100 "'" ;
+
+$("div.movie").css('padding-top',$aspectRatio);
+
+$("div.movie").text($aspectRatio);
+}
+);
+*/

@@ -1,0 +1,55 @@
+<$MTInclude module="ヘッダー"$>
+
+<body id="entry" class="blog<mt:BlogID>">
+<div id="container">
+
+<MTInclude module="HTMLヘッダー">
+
+<div id="content">
+<div id="entry-content">
+<div class="contentblock">
+<div id="main-content">
+<div id="entry-title"><h2><$MTEntryTitle$></h2></div>
+<div id="main-content-inner">
+
+<$MTEntryBody image_max_size="548"$>
+<$MTEntryMore image_max_size="548"$>
+
+<div id="entry-date">
+<div id="categories">カテゴリー：<mt:EntryCategories glue="&nbsp;/&nbsp;"><a href="<mt:ArchiveLink>"><mt:CategoryLabel></a></mt:EntryCategories></div>
+<div><$MTEntryDate format="%Y/%m/%d %p%l:%M"$></div>
+</div>
+
+<$mt:WidgetSet name="ブログ記事のメイン部分01"$>
+
+</div><!-- /main-content-inner -->
+</div><!-- /main-content -->
+
+<div id="sub-content" class="sub-content">
+
+<$mt:WidgetSet name="ブログ記事の右サイドバー"$>
+
+</div><!-- /sub-content -->
+
+<div class="to-top">
+<a href="#container">↑このページのトップへ</a>
+</div><!-- /to-top -->
+
+<$mt:WidgetSet name="ブログ記事のメイン部分02"$>
+
+<$mt:WidgetSet name="ブログ記事のメイン部分03"$>
+</div><!-- /contentblock -->
+</div><!-- /entry-content -->
+
+<div class="to-top">
+<a href="#container">↑このページのトップへ</a>
+</div><!-- /to-top -->
+
+</div><!-- /content -->
+
+<$mt:Include module="フッター"$>
+
+</div><!-- container -->
+
+</body>
+</html>
