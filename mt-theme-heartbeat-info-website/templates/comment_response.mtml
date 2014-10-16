@@ -11,7 +11,7 @@
     </MTSetVarBlock>
 </MTIf>
 
-<mt:Ignore>
+
 <MTIf name="body_class" eq="mt-comment-pending">
     <MTSetVarBlock name="page_title">コメント保留中</MTSetVarBlock>
 
@@ -20,9 +20,8 @@
     <MTSetVarBlock name="message">
     <p>コメントは現在承認されるまで公開を保留されています。</p>
     </MTSetVarBlock>
-
 </MTIf>
-</mt:Ignore>
+
 
 <MTIf name="body_class" eq="mt-comment-error">
     <MTSetVarBlock name="page_title">送信エラー</MTSetVarBlock>
@@ -48,7 +47,7 @@
 <p><a href="<$MTEntryLink$>">元のブログ記事</a>に戻る</p>
 
 <$MTInclude module="フッター"$>
-</div>
-</div>
+</div><!-- /comment-inner -->
+</div><!-- /container -->
 </body>
 </html>
