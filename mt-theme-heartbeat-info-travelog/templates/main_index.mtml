@@ -21,6 +21,7 @@
 <ul class="clearfix">
 </mt:SubCatIsFirst>
 <li id="cat-<MTCategoryID>" title="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
+
 <mt:If tag="CategoryDataCategorymainimg">
 <a href="<$MTCategoryArchiveLink$>" title="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
 <span class="catimg">
@@ -35,18 +36,7 @@
 <mt:else>
 <a href="<$MTCategoryArchiveLink$>" title="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
 <span class="catimg">
-
-<img src="" alt="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
-
-<mt:Entries lastn="1">
-<mt:EntryAssets lastn="1">
-<mt:AssetThumbnailURL width="350" square="1">
-</mt:EntryAssets>
-</mt:Entries>
-
-<mt:Ignore>
-<img <mt:Entries lastn="1"><mt:EntryAssets lastn="1">src="<mt:AssetThumbnailURL width="350" square="1">"</mt:EntryAssets></mt:Entries> alt="<$MTBlogName$>：<$MTCategoryLabel$>：<mt:If tag="CategoryDataCategorysubtitle"><mt:CategoryDataCategorysubtitle></mt:If>">
-</mt:Ignore>
+<img src="<mt:Entries lastn="1"><mt:EntryAssets lastn="1"><mt:AssetThumbnailURL width="350" square="1"></mt:EntryAssets></mt:Entries>" alt="<$MTBlogName$>：<$MTCategoryLabel$><mt:If tag="CategoryDataCategorysubtitle">：<mt:CategoryDataCategorysubtitle></mt:If>">
 </span>
 <span class="catname">
 <span class="catlabel"><$MTCategoryLabel$></span>
