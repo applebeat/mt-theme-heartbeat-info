@@ -6,6 +6,9 @@
 <MTInclude module="HTMLヘッダー">
 
 <div id="content">
+
+<$mt:Include widget="ナビゲーション（前・カテゴリー・後）"$>
+
 <div id="entry-content">
 <div class="contentblock">
 <div id="main-content">
@@ -15,9 +18,9 @@
 <$MTEntryBody image_max_size="548"$>
 <$MTEntryMore image_max_size="548"$>
 
-<div id="entry-date">
+<div id="entry-data">
 <div id="categories">カテゴリー：<mt:EntryCategories glue="&nbsp;/&nbsp;"><a href="<mt:ArchiveLink>"><mt:CategoryLabel></a></mt:EntryCategories></div>
-<div><$MTEntryDate format="%Y/%m/%d %p%l:%M"$></div>
+<div id="entry-date"><$MTEntryDate format="%Y/%m/%d %p%l:%M"$></div>
 </div>
 
 <$mt:WidgetSet name="ブログ記事のメイン部分01"$>
@@ -31,9 +34,7 @@
 
 </div><!-- /sub-content -->
 
-<div class="to-top">
-<a href="#container">↑このページのトップへ</a>
-</div><!-- /to-top -->
+<mt:Include widget="↑このページのトップへ">
 
 <$mt:WidgetSet name="ブログ記事のメイン部分02"$>
 
@@ -41,9 +42,7 @@
 </div><!-- /contentblock -->
 </div><!-- /entry-content -->
 
-<div class="to-top">
-<a href="#container">↑このページのトップへ</a>
-</div><!-- /to-top -->
+<mt:Include widget="↑このページのトップへ">
 
 </div><!-- /content -->
 

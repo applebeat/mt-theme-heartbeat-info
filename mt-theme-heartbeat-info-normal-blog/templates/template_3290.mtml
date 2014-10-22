@@ -1,16 +1,16 @@
 <mt:If tag="WebsiteDataTwitterwidget">
 <mt:If tag="WebsiteDataTwitterlinkurl">
 <div class="twitter widgetpart twwl">
-<div class="twitterwidget">
+<div id="twitterwidget" class="twitterwidget">
 <mt:WebsiteDataTwitterwidget convert_breaks="0">
 </div>
-<div class="twitterlinkurl">
+<div id="twitterlinkurl" class="twitterlinkurl">
 <a href="<mt:WebsiteDataTwitterlinkurl>" target="_blank">Twitter</a>
 </div>
 </div>
 <mt:else>
 <div class="twitter widgetpart">
-<div class="twitterwidget">
+<div id="twitterwidget" class="twitterwidget">
 <mt:WebsiteDataTwitterwidget convert_breaks="0">
 </div>
 </div>
@@ -18,7 +18,7 @@
 <mt:else>
 <mt:If tag="WebsiteDataTwitterlinkurl">
 <div class="twitter widgetpart">
-<div class="twitterlinkurl">
+<div id="twitterlinkurl" class="twitterlinkurl">
 <a href="<mt:WebsiteDataTwitterlinkurl>" target="_blank">Twitter</a>
 </div>
 </div>

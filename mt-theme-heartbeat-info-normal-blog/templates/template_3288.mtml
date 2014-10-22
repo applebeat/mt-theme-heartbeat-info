@@ -1,6 +1,4 @@
-<$mt:BlogEntryCount setvar="blogentrycount"$>
-<mt:If name="blogentrycount" ge="2">
-<div class="navi widget">
+<div id="navi-entry" class="navi widget">
 <h3>Entry Link│ブログ記事リンク</h3>
 <ul class="linklist">
 <MTEntryPrevious><li class="pre"><a href="<$MTEntryPermalink$>" title="エントリー：<mt:EntryTitle>へ">&laquo; 前のエントリー</a></li></MTEntryPrevious>
@@ -8,4 +6,3 @@
 <MTEntryNext><li class="next"><a href="<$MTEntryPermalink$>" title="エントリー：<mt:EntryTitle>へ">次のエントリー &raquo;</a></li></MTEntryNext>
 </ul>
 </div>
-</mtIf>

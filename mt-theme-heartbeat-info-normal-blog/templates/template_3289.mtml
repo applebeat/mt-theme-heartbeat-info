@@ -1,16 +1,16 @@
 <mt:If tag="WebsiteDataFacebookwidget">
 <mt:If tag="WebsiteDataFacebooklinkurl">
 <div class="facebook widgetpart fbwl">
-<div class="facebookwidget">
+<div id="facebookwidget" class="facebookwidget">
 <mt:WebsiteDataFacebookwidget convert_breaks="0">
 </div>
-<div class="facebooklinkurl">
+<div id="facebooklinkurl" class="facebooklinkurl">
 <a href="<mt:WebsiteDataFacebooklinkurl>" target="_blank">Facebook</a>
 </div>
 </div>
 <mt:else>
 <div class="facebook widgetpart">
-<div class="facebookwidget">
+<div id="facebookwidget" class="facebookwidget">
 <mt:WebsiteDataFacebookwidget convert_breaks="0">
 </div>
 </div>
@@ -18,7 +18,7 @@
 <mt:else>
 <mt:If tag="WebsiteDataFacebooklinkurl">
 <div class="facebook widgetpart">
-<div class="facebooklinkurl">
+<div id="facebooklinkurl" class="facebooklinkurl">
 <a href="<mt:WebsiteDataFacebooklinkurl>" target="_blank">Facebook</a>
 </div>
 </div>

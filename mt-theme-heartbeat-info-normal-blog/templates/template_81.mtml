@@ -20,14 +20,13 @@
 
 <MTEntries>
 <mt:SetVarBlock name="entryimage"><MTEntryAssets lastn="1"><mt:AssetThumbnailURL width="180"></MTEntryAssets></mt:SetVarBlock>
-<dl>
-<dt>
+<dl id="entryid<mt:EntryID>">
+<dt class="entrytitle">
 <a href="<$MTEntryPermalink$>" title="<$MTEntryTitle$>"><$MTEntryTitle$><br /><span class="date"><$MTEntryDate format="%Y/%m/%d %p%l:%M"$></span></a>
 </dt>
 
-<dd>
+<dd class="entrycontent">
 <a href="<$MTEntryPermalink$>" title="<$MTEntryTitle$>">
-
 <mt:If name="entryimage">
 <div class="thumb">
 <img src="<mt:GetVar name="entryimage">" alt="アイテム画像" width="180" />
@@ -61,9 +60,7 @@
 
 </div><!-- /category-content -->
 
-<div class="to-top">
-<a href="#container">↑このページのトップへ</a>
-</div><!-- /to-top -->
+<mt:Include widget="↑このページのトップへ">
 
 </div><!-- /content -->
 

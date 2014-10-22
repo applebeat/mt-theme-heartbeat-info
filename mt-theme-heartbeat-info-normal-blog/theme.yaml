@@ -203,6 +203,7 @@ elements:
             label: ブログ記事のメイン部分02
             order: 1000
             widgets: 
+              - ナビゲーション（前・カテゴリー・後）
               - Zenback
           template_3295: 
             label: ブログ記事一覧のメイン部分01
@@ -234,6 +235,7 @@ elements:
             widgets: 
               - コメント
               - トラックバック
+              - ナビゲーション（前・カテゴリー・後）
           template_5345: 
             label: ブログのトップページの右サイドバー
             order: 1000
@@ -246,4 +248,4 @@ elements:
 id: mt-theme-heartbeat-info-normal-blog
 label: Heartbeat.info ノーマルブログ
 name: Heartbeat.info ノーマルブログ
-version: 1.2.3
+version: 1.2.6
