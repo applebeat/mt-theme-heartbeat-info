@@ -407,10 +407,14 @@ border-top-right-radius: 6px;
 -moz-border-radius-topright: 6px;
 }
 
-#category .action dl dt a span.date{
+#category .action dl dt a span{
+display:block;
+color:#ffffff;
+}
+
+#category .action dl dt a span.entrydate{
 font-weight:normal;
 font-size:90%;
-color:#ffffff;
 }
 
 #category .action dl dd{
@@ -450,17 +454,23 @@ white-space:nowrap;
 width:100%;
 }
 
-#entry #entry-title{
+#entry #entryheadline{
 border:1px solid #000000;
 border-left:15px solid #000000;
 padding-left:10px;
 margin-bottom:15px;
 border-radius:7px;
+overflow:hidden;
 }
 
-#entry #entry-title h2 #title-date{
+#entry #entryheadline h2 span{
+display:block;
+}
+
+#entry #entryheadline h2 #entrydate{
 font-size:14px;
 font-weight:normal;
+padding-top:3px;
 }
 
 #entry #entry-content #entry-data{
