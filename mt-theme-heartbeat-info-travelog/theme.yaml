@@ -70,6 +70,15 @@ elements:
         required: 0
         tag: EntryDataLinkurl
         type: textarea
+      notgalleryimage: 
+        default: 0
+        description: ギャラリーに含めたくない画像はチェックをしてください。
+        name: ギャラリーに含めない
+        obj_type: image
+        options: ~
+        required: 0
+        tag: ImageDataNotGalleryImage
+        type: checkbox
       streetviewangle: 
         default: 0
         description: ストリートビューの方角を設定する角度を入れる。埋め込み用ソースのcbpの2番目の数値を使う
@@ -326,4 +335,4 @@ elements:
 id: mt-theme-heartbeat-info-travelog
 label: Heartbeat.info 旅行記ブログ
 name: Heartbeat.info 旅行記ブログ
-version: 1.2.7
+version: 1.2.9

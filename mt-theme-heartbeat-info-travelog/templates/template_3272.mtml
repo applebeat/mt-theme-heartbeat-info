@@ -1,10 +1,12 @@
-<mt:EntryAssets><mt:SetVar name="hasAsset" value="1"></mt:EntryAssets>
+<mt:EntryAssets type="image"><mt:Unless tag="ImageDataNotGalleryImage"><mt:SetVar name="hasAsset" value="1"></mt:Unless></mt:EntryAssets>
 <mt:If name="hasAsset">
 <div id="gallery" class="gallery widget">
 <h3>Gallery│ギャラリー</h3>
 <div class="galleryicon">
-<mt:EntryAssets sort_order="ascend" sort_by="file_name">
+<mt:EntryAssets sort_order="ascend" sort_by="file_name" type="image">
+<mt:Unless tag="ImageDataNotGalleryImage">
 <a href="<$mt:AssetURL$>" data-lightbox="lightbox" title="<$mt:AssetDescription$>"><img src="<$mt:AssetThumbnailURL width="60" square="1"$>"></a>
+</mt:Unless>
 </mt:EntryAssets>
 </div><!-- /galleryicon -->
 </div><!-- /gallery -->
